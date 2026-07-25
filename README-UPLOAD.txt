@@ -1,24 +1,28 @@
-TRAIL TATER 2.0 — GITHUB UPLOAD PACKAGE
+TRAIL TATER 2.0a — PHONE-FRIENDLY GITHUB PACKAGE
 
-Upload ALL of the contents of this folder to the root of:
+Upload these files directly to the root of:
 trailtater-ct/trailtater-website
 
-Important:
-- index.html must be at the top level of the repository.
-- styles.css and script.js must also remain at the top level.
-- Keep the assets folder and everything inside it.
+Files:
+- index.html
+- styles.css
+- script.js
+- trail-tater-hero.jpg
+- stewie.jpg
+- README-UPLOAD.txt
 
-Cloudflare Pages is already connected to the repository.
-After GitHub finishes the upload/commit, Cloudflare should redeploy automatically.
+There are no folders in this version. This is intentional so the site can be managed from a phone.
 
-This first version includes:
-- New full-width homepage using the Trail Tater camper photo
-- Responsive phone-friendly navigation
-- Crew section with Stewie's photo
-- Adventure journal placeholders
-- History, cemetery, radio, genealogy, and gallery sections
-- Trail Tater rig section
-- Around the Campfire story section
-- QR-code visitor welcome area
+GitHub steps:
+1. Open the trailtater-website repository.
+2. Tap the three-dot menu beside Code.
+3. Choose Upload file.
+4. Select all six files.
+5. Commit directly to the main branch.
 
-Ken, Lisa, and Billie's photos can be added later without rebuilding the structure.
+Cloudflare Pages is connected to the repository and should publish the update automatically.
+
+For future crew photos, use these simple root-level names:
+- ken.jpg
+- lisa.jpg
+- billie.jpg
