@@ -3,26 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Trail Tater — family camping, history, radio, cemeteries, and the discoveries found along the way.">
+  <meta name="description" content="Trail Tater — a family camping, history, genealogy, cemetery and amateur radio travel journal.">
+  <meta name="theme-color" content="#18372d">
   <title>Trail Tater | History, Campgrounds, Family & Adventure</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top" aria-label="Trail Tater home">
-      <span class="brand-mark">🥔</span>
-      <span>Trail Tater</span>
-    </a>
+    <a class="brand" href="#top" aria-label="Trail Tater home"><span class="brand-mark">🥔</span><span>Trail Tater</span></a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav">
-      <a href="#crew">Crew</a>
-      <a href="#adventures">Adventures</a>
-      <a href="#discoveries">Discoveries</a>
-      <a href="#rig">The Rig</a>
-      <a href="#campfire">Campfire Stories</a>
+    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
+      <a href="#map">Travel Map</a><a href="#adventures">Adventures</a><a href="#discoveries">Discoveries</a><a href="#rig">The Rig</a><a href="#crew">Crew</a><a href="#qr">QR Code</a>
     </nav>
   </header>
 
@@ -32,134 +27,82 @@
       <div class="hero-shade"></div>
       <div class="hero-content">
         <p class="eyebrow">A family travel journal</p>
-        <h1>History. Campgrounds.<br>Family. Adventure.</h1>
-        <p>Follow Ken, Lisa, Billie, and Stewie as we explore one campsite—and one good story—at a time.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#adventures">See the adventures</a>
-          <a class="button ghost" href="#crew">Meet the crew</a>
-        </div>
+        <h1>Pull up a chair.<br>Come along for the ride.</h1>
+        <p>History, campgrounds, genealogy, amateur radio, old cemeteries, family memories—and one very serious campground inspector named Stewie.</p>
+        <div class="hero-actions"><a class="button primary" href="#map">Explore the map</a><a class="button ghost" href="#adventures">Read the adventures</a></div>
       </div>
     </section>
 
     <section class="intro section">
-      <div>
-        <p class="eyebrow">More than miles on a map</p>
-        <h2>Here’s what we discovered.</h2>
-      </div>
-      <p>Trail Tater is our rolling basecamp for campgrounds, family trips, hidden history, old cemeteries, amateur radio, genealogy, and whatever interesting back road happens to catch our attention.</p>
+      <div><p class="eyebrow">More than miles on a map</p><h2>Here’s what we discovered.</h2></div>
+      <p>Trail Tater is our rolling basecamp for family trips, hidden history, campground stays, cemetery discoveries, amateur radio, genealogy, and whatever interesting back road happens to catch our attention.</p>
     </section>
 
-    <section id="crew" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Meet the crew</p>
-        <h2>The people—and dog—behind Trail Tater</h2>
+    <section id="map" class="section map-section muted">
+      <div class="section-heading split-heading">
+        <div><p class="eyebrow">Interactive travel map</p><h2>Every pin tells a story.</h2></div>
+        <p>Select a pin or campground name to see the year, location, and the beginning of that trip’s journal. More photos, ratings, stories, and discoveries will be added as the archive grows.</p>
       </div>
-      <div class="crew-grid">
-        <article class="crew-card placeholder">
-          <div class="portrait">K</div>
-          <h3>Ken</h3>
-          <p>Driver, storyteller, history hunter, cemetery caretaker, radio operator, and chief navigator of interesting detours.</p>
-        </article>
-        <article class="crew-card placeholder">
-          <div class="portrait">L</div>
-          <h3>Lisa</h3>
-          <p>Co-pilot, family anchor, and the steady hand behind the adventures.</p>
-        </article>
-        <article class="crew-card placeholder">
-          <div class="portrait">B</div>
-          <h3>Billie</h3>
-          <p>Scout, adventurer, sharp observer, and highly qualified reviewer of Dad’s website ideas.</p>
-        </article>
-        <article class="crew-card">
-          <img class="portrait photo" src="stewie.jpg" alt="Stewie sitting inside the camper">
-          <h3>Stewie</h3>
-          <p>Campground inspector, squirrel-patrol supervisor, and chief treat quality-control officer.</p>
-        </article>
+      <div class="stats" aria-label="Trail Tater travel statistics">
+        <div><strong>4</strong><span>Campgrounds</span></div><div><strong>4</strong><span>States</span></div><div><strong>2023</strong><span>Map begins</span></div><div><strong>∞</strong><span>Detours ahead</span></div>
       </div>
-      <p class="small-note">Crew portraits for Ken, Lisa, and Billie will be added as photos arrive.</p>
+      <div class="map-layout">
+        <div id="travel-map" role="region" aria-label="Interactive map of Trail Tater campground trips"><p class="map-fallback">Loading the Trail Tater map…</p></div>
+        <div class="trip-list" id="trip-list" aria-label="Campground list"></div>
+      </div>
+      <noscript><p class="small-note">The interactive map needs JavaScript, but the campground list remains available.</p></noscript>
     </section>
 
-    <section id="adventures" class="section muted">
-      <div class="section-heading">
-        <p class="eyebrow">Adventure journal</p>
-        <h2>Trips worth remembering</h2>
-      </div>
+    <section id="adventures" class="section">
+      <div class="section-heading"><p class="eyebrow">Adventure journal</p><h2>Trips worth remembering</h2></div>
       <div class="card-grid">
-        <article class="feature-card">
-          <span class="year">2026</span>
-          <h3>Plymouth, Massachusetts</h3>
-          <p>A Mayflower-ancestor journey through Plimoth Patuxet, Pilgrim Hall, family history, and the places where several branches of our story began.</p>
-          <span class="status">Journal coming soon</span>
-        </article>
-        <article class="feature-card">
-          <span class="year">2025</span>
-          <h3>Gettysburg, Pennsylvania</h3>
-          <p>Battlefield history, family time, and a landscape where nearly every road has a story attached to it.</p>
-          <span class="status">Photos coming soon</span>
-        </article>
-        <article class="feature-card">
-          <span class="year">2024</span>
-          <h3>Charlestown, Rhode Island</h3>
-          <p>Coastal camping, salt air, and another chapter in the growing Trail Tater travel map.</p>
-          <span class="status">Story coming soon</span>
-        </article>
-        <article class="feature-card">
-          <span class="year">2021–2023</span>
-          <h3>North Woodstock, New Hampshire</h3>
-          <p>Three years of mountain trips, familiar roads, and the kind of place that keeps calling you back.</p>
-          <span class="status">Gallery coming soon</span>
-        </article>
+        <article class="feature-card featured"><span class="year">2026 • Upcoming flagship journal</span><h3>Sandy Pond Campground</h3><p class="place">Plymouth, Massachusetts</p><p>A Mayflower-ancestor journey through Plimoth Patuxet, Pilgrim Hall, Burial Hill, Mayflower II, family history, and the places where several branches of our story began.</p><span class="status">Journal begins July 2026</span></article>
+        <article class="feature-card"><span class="year">2025</span><h3>Artillery Ridge Campground</h3><p class="place">Gettysburg, Pennsylvania</p><p>Battlefield history, family time, and a landscape where nearly every road, ridge, and stone monument has a story attached to it.</p><span class="status">Photos and story coming</span></article>
+        <article class="feature-card"><span class="year">2024</span><h3>Burlingame State Park Campground</h3><p class="place">Charlestown, Rhode Island</p><p>Coastal camping, Watchaug Pond, salt air, and another chapter in the growing Trail Tater travel map.</p><span class="status">Trip page coming</span></article>
+        <article class="feature-card"><span class="year">2023</span><h3>Lost River Valley Campground</h3><p class="place">North Woodstock, New Hampshire</p><p>A White Mountains favorite surrounded by familiar roads, family memories, and the kind of scenery that keeps calling you back.</p><span class="status">Gallery coming</span></article>
       </div>
     </section>
 
-    <section id="discoveries" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Along the way</p>
-        <h2>The discoveries make the trip</h2>
-      </div>
+    <section id="discoveries" class="section muted">
+      <div class="section-heading"><p class="eyebrow">Along the way</p><h2>The discoveries make the trip</h2></div>
       <div class="topic-grid">
-        <article><span>🪦</span><h3>History & Cemeteries</h3><p>Restoration work, gravestone symbols, veterans, local history, and stories carved in stone.</p></article>
-        <article><span>📻</span><h3>K1RHH Radio</h3><p>Portable operating, JOTA, POTA, the RV Radio Network, and getting Scouts on the air.</p></article>
-        <article><span>🧬</span><h3>Family Story</h3><p>Howland, Soule, Barnum, Sherwood, Alaby, Hamilton, and the winding roads back to Plymouth.</p></article>
-        <article><span>📷</span><h3>Photo Galleries</h3><p>Camp life, historic places, wildlife, family moments, and Stewie doing important inspection work.</p></article>
+        <article><span>🪦</span><h3>Cemetery Chronicles</h3><p>Restoration work, gravestone symbols, veterans, local history, and stories carved in stone.</p><a href="#coming-soon">Explore soon →</a></article>
+        <article><span>🧬</span><h3>Family Story</h3><p>Howland, Soule, Barnum, Sherwood, Alaby, Hamilton, and the winding roads back to Plymouth.</p><a href="#coming-soon">Explore soon →</a></article>
+        <article><span>📻</span><h3>K1RHH Radio</h3><p>Portable operating, JOTA, POTA, the RV Radio Network, and helping Scouts get on the air.</p><a href="#coming-soon">Explore soon →</a></article>
+        <article><span>⭐</span><h3>Campground Reviews</h3><p>Cleanliness, quiet, sites, dog friendliness, solar, cell service, nearby history, and the final Trail Tater verdict.</p><a href="#coming-soon">Explore soon →</a></article>
+        <article><span>📷</span><h3>Photo Galleries</h3><p>Camp life, historic places, wildlife, family moments, and Stewie conducting important inspections.</p><a href="#coming-soon">Explore soon →</a></article>
+        <article><span>🔥</span><h3>Campfire Stories</h3><p>Firehouse memories, woodworking, homemade instruments, music, family stories, and wonderfully useless knowledge.</p><a href="#coming-soon">Explore soon →</a></article>
       </div>
     </section>
 
     <section id="rig" class="section rig">
-      <div class="rig-copy">
-        <p class="eyebrow">The rolling basecamp</p>
-        <h2>Meet Trail Tater</h2>
-        <p>A 2025 Forest River Rockwood Geo Pro G20BH, set up for family travel, solar-powered camping, history runs, and plenty of room for future upgrades.</p>
-        <div class="specs">
-          <span>Geo Pro G20BH</span><span>Two 190W solar panels</span><span>12V camping setup</span><span>Honda EU2000i</span>
-        </div>
-      </div>
+      <div class="rig-copy"><p class="eyebrow">The rolling basecamp</p><h2>Meet Trail Tater</h2><p>A 2025 Forest River Rockwood Geo Pro G20BH, set up for family travel, solar-powered camping, history runs, and plenty of practical upgrades.</p><div class="specs"><span>Geo Pro G20BH</span><span>Two 190W solar panels</span><span>12V refrigerator</span><span>Honda EU2000i</span><span>2014 Ram 1500 tow vehicle</span><span>Boondocking capable</span></div><a class="text-link" href="#coming-soon">Rig tour and upgrades coming soon →</a></div>
       <img src="trail-tater-hero.jpg" alt="Side view of the Trail Tater camper">
     </section>
 
-    <section id="campfire" class="section campfire">
-      <p class="eyebrow">Around the campfire</p>
-      <h2>Some stories don’t belong in a category.</h2>
-      <p>This will be the home for family memories, firehouse stories, woodworking, homemade instruments, songs that stop us mid-conversation, and the odd bit of wonderfully useless knowledge gathered along the way.</p>
-      <span class="status light">First stories coming soon</span>
+    <section id="crew" class="section">
+      <div class="section-heading"><p class="eyebrow">Meet the crew</p><h2>The people—and dog—behind Trail Tater</h2></div>
+      <div class="crew-grid">
+        <article class="crew-card placeholder"><div class="portrait">K</div><h3>Ken</h3><p>Driver, storyteller, history hunter, cemetery caretaker, radio operator, and chief navigator of interesting detours.</p></article>
+        <article class="crew-card placeholder"><div class="portrait">L</div><h3>Lisa</h3><p>Co-pilot, family anchor, and the steady hand behind the adventures.</p></article>
+        <article class="crew-card placeholder"><div class="portrait">B</div><h3>Billie</h3><p>Scout, adventurer, sharp observer, and highly qualified reviewer of Dad’s website ideas.</p></article>
+        <article class="crew-card"><img class="portrait photo" src="stewie.jpg" alt="Stewie sitting inside the camper"><h3>Stewie</h3><p>Campground inspector, squirrel-patrol supervisor, and chief treat quality-control officer.</p></article>
+      </div>
+      <p class="small-note">Crew portraits for Ken, Lisa, and Billie can be added as photos arrive.</p>
     </section>
 
-    <section class="section qr-welcome">
-      <div>
-        <p class="eyebrow">Did you scan the camper?</p>
-        <h2>Hi there—thanks for stopping by.</h2>
-        <p>You’ve found the Trail Tater crew. Take a look around, see where we’ve been, and check back as this travel journal grows.</p>
-      </div>
-      <div class="potato">🥔</div>
+    <section id="coming-soon" class="section campfire">
+      <p class="eyebrow">The road ahead</p><h2>This is only the beginning.</h2><p>The site now has a foundation ready for trip journals, campground ratings, photo galleries, genealogy pages, cemetery stories, radio logs, travel statistics, and many more pins on the map.</p><span class="status light">Built to grow one adventure at a time</span>
+    </section>
+
+    <section id="qr" class="section qr-welcome">
+      <div><p class="eyebrow">Share Trail Tater</p><h2>Scan the camper. Join the adventure.</h2><p>This QR code goes directly to TrailTater.com. It can be printed for the camper, campsite signs, cards, stickers, or family trip materials.</p><a class="button secondary" href="TrailTater-QR-Code.png" download>Download the QR code</a></div>
+      <img class="qr-image" src="TrailTater-QR-Code.png" alt="QR code linking to TrailTater.com">
     </section>
   </main>
 
-  <footer>
-    <strong>Trail Tater</strong>
-    <span>History, campgrounds, family, and adventure.</span>
-    <span>© <span id="year"></span> Trail Tater</span>
-  </footer>
-
+  <footer><strong>Trail Tater</strong><span>History, campgrounds, family, and adventure.</span><span>© <span id="year"></span> Trail Tater</span></footer>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
   <script src="script.js"></script>
 </body>
 </html>

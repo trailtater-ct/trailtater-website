@@ -1,28 +1,27 @@
-TRAIL TATER 2.0a — PHONE-FRIENDLY GITHUB PACKAGE
+TRAIL TATER VERSION 3.0 — UPLOAD INSTRUCTIONS
 
-Upload these files directly to the root of:
-trailtater-ct/trailtater-website
-
-Files:
+Upload ALL of these files to the ROOT of your GitHub repository:
 - index.html
 - styles.css
 - script.js
 - trail-tater-hero.jpg
 - stewie.jpg
-- README-UPLOAD.txt
+- TrailTater-QR-Code.png
 
-There are no folders in this version. This is intentional so the site can be managed from a phone.
+Important:
+1. Keep the filenames exactly as shown.
+2. Replace the older files when GitHub asks.
+3. Commit the changes.
+4. Cloudflare Pages should deploy automatically.
+5. The interactive map uses Leaflet and OpenStreetMap, so it needs an internet connection to display map tiles.
 
-GitHub steps:
-1. Open the trailtater-website repository.
-2. Tap the three-dot menu beside Code.
-3. Choose Upload file.
-4. Select all six files.
-5. Commit directly to the main branch.
-
-Cloudflare Pages is connected to the repository and should publish the update automatically.
-
-For future crew photos, use these simple root-level names:
-- ken.jpg
-- lisa.jpg
-- billie.jpg
+This version includes:
+- Interactive campground map
+- Correct campground names for 2023–2026
+- Travel statistics
+- Expanded adventure cards
+- Cemetery, genealogy, radio, reviews, gallery and campfire sections
+- Updated Rig section
+- Crew section
+- Downloadable TrailTater.com QR code
+- Mobile-friendly navigation and layout
