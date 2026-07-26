@@ -9,7 +9,7 @@ UPLOAD INSTRUCTIONS
 
 WHAT THIS UPDATE ADDS
 - gettysburg-2025.html (complete trip story)
-- images/gettysburg/ (optimized trip photographs)
+- gettysburg- (optimized trip photographs)
 - Updated homepage Gettysburg card and featured gallery
 - Updated travel-map popup with a link to the Gettysburg page
 - Responsive Gettysburg-specific styling
