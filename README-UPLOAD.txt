@@ -1,24 +1,20 @@
-TRAIL TATER 3.1 — INTERACTIVE MAP + KEN & LISA CREW PHOTOS
+TRAIL TATER VERSION 3.2 — BURLINGAME / CHARLESTOWN UPDATE
 
-Upload every file in this folder to the ROOT of the GitHub repository, replacing files with the same names.
+WHAT IS NEW
+- Added a complete Charlestown, Rhode Island trip page: charlestown-ri.html
+- Added the Burlingame State Park story and Trail Tater Take
+- Added all 10 supplied trip photos in images/charlestown/
+- Added a Charlestown photo gallery to the home page
+- Updated the 2024 adventure card to link to the new page
+- Added mobile-friendly gallery and trip-page styling
 
-Important files:
-- index.html
-- styles.css
-- script.js
-- trail-tater-hero.jpg
-- stewie.jpg
-- ken.jpg
-- lisa.jpg
-- TrailTater-QR-Code.png
+HOW TO UPLOAD TO GITHUB
+1. Open the GitHub repository connected to Cloudflare Pages.
+2. Upload ALL files and folders from this package, preserving the folder structure.
+3. Replace index.html, styles.css, script.js, and README-UPLOAD.txt when asked.
+4. Add charlestown-ri.html and the complete images/charlestown folder.
+5. Commit the changes.
+6. Cloudflare Pages should automatically deploy the new version after the commit.
 
-After GitHub finishes the commit, Cloudflare Pages should deploy automatically.
-
-IMPORTANT CUSTOM DOMAIN STEP:
-In Cloudflare, open Workers & Pages > trailtater-website > Custom domains.
-Choose “Set up a custom domain” and attach trailtater.com to THIS Pages project.
-Cloudflare should create or adjust the needed DNS routing. Do not manually delete unrelated GoDaddy records such as pay or _domainconnect.
-
-Confirm both addresses show the same version:
-- https://trailtater-website.pages.dev
-- https://trailtater.com
+IMPORTANT
+The images/charlestown folder must be uploaded as a folder. The Charlestown page and gallery will not show photographs if those image files are omitted or moved.
