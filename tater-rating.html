@@ -1,8 +1,41 @@
-<!DOCTYPE html><html><head><title>Tater Rating System</title></head>
-<body><h1>🥔 Official Tater Rating System</h1>
-<p>Five Taters = I'd happily camp here again tomorrow.</p>
-<p>Four Taters = Excellent campground.</p>
-<p>Three Taters = Solid recommendation.</p>
-<p>Two Taters = One-time visit.</p>
-<p>One Tater = I'd keep looking.</p>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="The official Trail Tater campground rating system.">
+  <title>The Tater Rating System | Trail Tater</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header v4-header">
+  <a class="brand" href="index.html"><span class="brand-mark">🥔</span><span><strong>Trail Tater</strong><small>Friends made along the way</small></span></a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+  <nav id="site-nav" class="site-nav"><a href="index.html">Home</a><a href="gettysburg-2025.html">Gettysburg</a><a href="radio.html">Radio</a><a href="contact.html">Say Hello</a></nav>
+</header>
+<main>
+  <section class="rating-page-hero"><p class="eyebrow">The official scorecard</p><h1>No stars.<br>Only taters.</h1><p>A campground rating system built for actual campers, practical needs and the stories that make a place memorable.</p></section>
+  <section class="section rating-page">
+    <div class="rating-page-grid">
+      <article><strong>🥔🥔🥔🥔🥔</strong><h2>Load up. We are going back.</h2><p>A memorable stay with the full package: a good campsite, a cared-for campground, friendly people, practical comfort and something nearby worth discovering.</p></article>
+      <article><strong>🥔🥔🥔🥔</strong><h2>Easy to recommend.</h2><p>An excellent campground with only small shortcomings. We would happily return and tell friends about it.</p></article>
+      <article><strong>🥔🥔🥔</strong><h2>A solid stay.</h2><p>More good than bad. It did the job, offered a pleasant trip and may deserve another visit.</p></article>
+      <article><strong>🥔🥔</strong><h2>One visit may be enough.</h2><p>Usable, but the drawbacks were hard to ignore. We would look at other choices before booking again.</p></article>
+      <article><strong>🥔</strong><h2>Keep driving.</h2><p>The basics, care or experience fell short enough that we would not recommend the stay.</p></article>
+    </div>
+    <div class="scorecard-criteria">
+      <p class="eyebrow">What earns the taters?</p><h2>The full campground picture.</h2>
+      <div><span>🏕️</span><p><strong>The campsite</strong> Space, level ground, hookups, shade, privacy and how comfortably Trail Tater fits.</p></div>
+      <div><span>🧹</span><p><strong>Campground care</strong> Cleanliness, roads, bathhouses, grounds and attention to maintenance.</p></div>
+      <div><span>👋</span><p><strong>The welcome</strong> Staff, neighbors, helpfulness and whether the place feels friendly.</p></div>
+      <div><span>🔌</span><p><strong>Practical camping</strong> Power, water, dump access, solar, cell service, dog friendliness and useful amenities.</p></div>
+      <div><span>🗺️</span><p><strong>The discoveries</strong> History, scenery, food, museums, cemeteries and reasons to leave the campsite for a while.</p></div>
+      <div><span>🥔</span><p><strong>The return test</strong> The final question: would we honestly choose to camp there again?</p></div>
+    </div>
+  </section>
+</main>
+<footer class="v4-footer"><div><strong>🥔 Trail Tater</strong><span>No stars were harmed in the making of this rating system.</span></div><div><a class="footer-email" href="mailto:trailtater@gmail.com">trailtater@gmail.com</a><span>© <span id="year"></span> Trail Tater</span></div></footer>
+<script src="script.js"></script>
 </body></html>
