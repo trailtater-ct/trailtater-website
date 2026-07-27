@@ -8,6 +8,21 @@ document.querySelectorAll('.site-nav a').forEach(a => a.addEventListener('click'
   nav.classList.remove('open');
   toggle?.setAttribute('aria-expanded', 'false');
 }));
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && nav?.classList.contains('open')) {
+    nav.classList.remove('open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.focus();
+  }
+});
+document.addEventListener('click', (event) => {
+  if (!nav?.classList.contains('open')) return;
+  if (nav.contains(event.target) || toggle?.contains(event.target)) return;
+  nav.classList.remove('open');
+  toggle?.setAttribute('aria-expanded', 'false');
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const trips = [

@@ -1,0 +1,16 @@
+Trail Tater 4.0 Alpha 4.1 — Mobile Polish Update
+
+UPLOAD ONLY THESE FILES:
+- index.html
+- tater-rating.html
+- styles.css
+- script.js
+
+What this fixes:
+- Separates “Trail Tater” and “Friends made along the way” cleanly on phones.
+- Prevents the footer identity, disclaimer, email, copyright and year from running together.
+- Refines the mobile Menu button and dropdown spacing.
+- Improves very narrow-screen behavior.
+- Lets the menu close by tapping outside it or pressing Escape.
+
+No photographs need to be uploaded for this update.

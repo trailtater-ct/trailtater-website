@@ -118,3 +118,148 @@
   .v4-footer{flex-direction:column;align-items:flex-start}.v4-footer>div:last-child{text-align:left}
   .rating-page-grid article{grid-template-columns:1fr;gap:9px}.rating-page-grid p{grid-column:auto}.scorecard-criteria{padding:28px 22px}
 }
+
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4.1 — Mobile polish
+   ========================================================= */
+.v4-header{
+  min-height:78px;
+}
+.v4-header .brand{
+  min-width:0;
+  gap:12px;
+}
+.v4-header .brand-mark{
+  flex:0 0 auto;
+  line-height:1;
+}
+.v4-header .brand-copy{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr);
+  gap:4px;
+  min-width:0;
+  line-height:1;
+}
+.v4-header .brand-name,
+.v4-header .brand-tagline{
+  display:block !important;
+  margin:0;
+  padding:0;
+  white-space:normal;
+}
+.v4-header .brand-name{
+  font-size:1.2rem;
+  line-height:1.05;
+  letter-spacing:-.015em;
+}
+.v4-header .brand-tagline{
+  font-size:.68rem;
+  line-height:1.25;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+  opacity:.74;
+}
+.v4-header .menu-toggle{
+  flex:0 0 auto;
+  min-width:78px;
+  min-height:48px;
+  border-radius:15px;
+  font-weight:700;
+}
+.v4-footer .footer-identity,
+.v4-footer .footer-contact{
+  display:grid;
+  gap:7px;
+}
+.v4-footer .footer-identity strong{
+  display:block;
+  font-size:1.08rem;
+}
+.v4-footer .footer-identity span{
+  display:block;
+  line-height:1.55;
+}
+.v4-footer .footer-contact{
+  justify-items:end;
+}
+.v4-footer .footer-email{
+  display:block;
+  overflow-wrap:anywhere;
+  color:#f2cf7e;
+  font-weight:800;
+  text-decoration:none;
+}
+.v4-footer .footer-contact>span{
+  display:block;
+}
+@media(max-width:900px){
+  .v4-header{
+    padding:13px 18px;
+  }
+  .v4-header .site-nav{
+    top:calc(100% + 8px);
+    right:12px;
+    left:12px;
+    gap:4px;
+    padding:12px;
+    border:1px solid rgba(255,255,255,.12);
+  }
+  .v4-header .site-nav a{
+    padding:13px 14px;
+    border-radius:11px;
+  }
+  .v4-header .site-nav a:hover,
+  .v4-header .site-nav a:focus-visible{
+    background:rgba(255,255,255,.08);
+  }
+}
+@media(max-width:700px){
+  html{scroll-padding-top:88px}
+  .v4-header{
+    min-height:88px;
+  }
+  .v4-header .brand{
+    gap:10px;
+    max-width:calc(100% - 92px);
+  }
+  .v4-header .brand-mark{
+    font-size:1.55rem;
+  }
+  .v4-header .brand-name{
+    font-size:1.08rem;
+  }
+  .v4-header .brand-tagline{
+    font-size:.61rem;
+    letter-spacing:.055em;
+  }
+  .v4-header .menu-toggle{
+    min-width:74px;
+    min-height:50px;
+    padding:8px 10px;
+  }
+  .v4-footer{
+    gap:22px;
+    padding:30px 24px;
+  }
+  .v4-footer .footer-contact{
+    justify-items:start;
+  }
+  .rating-page-hero{
+    padding-top:145px;
+  }
+}
+@media(max-width:390px){
+  .v4-header{
+    padding-inline:12px;
+  }
+  .v4-header .brand-mark{
+    display:none;
+  }
+  .v4-header .brand{
+    max-width:calc(100% - 84px);
+  }
+  .v4-header .brand-name{
+    font-size:1.02rem;
+  }
+}
