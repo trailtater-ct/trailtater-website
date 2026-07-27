@@ -38,3 +38,22 @@
 .contact-topics{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:36px 0}.contact-topics article{background:var(--cream);border:1px solid var(--line);border-radius:20px;padding:24px}.contact-topics article>span{font-size:2rem}.contact-topics h3{font-family:"Fraunces",Georgia,serif;font-size:1.3rem;margin:.4em 0}.contact-topics p{color:var(--muted);margin-bottom:0}.contact-note{background:var(--forest);color:white;border-radius:24px;padding:30px;text-align:center}.contact-note h2{font-family:"Fraunces",Georgia,serif;margin-top:0}.contact-note p{color:#e2ebe5}
 @media(max-width:900px){.contact-topics{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:650px){.contact-card{grid-template-columns:1fr;text-align:center;padding:26px}.contact-topics{grid-template-columns:1fr}.contact-hero{min-height:56vh;padding-top:105px}footer{gap:12px}}
+
+
+/* Version 3.4 feature enhancements */
+.panorama-feature{margin:2.4rem 0 3rem;border-radius:24px;overflow:hidden;background:#fff;box-shadow:0 18px 50px rgba(22,45,37,.16)}
+.panorama-feature img{display:block;width:100%;height:clamp(260px,42vw,520px);object-fit:cover;object-position:center 58%}
+.panorama-feature figcaption{padding:1rem 1.25rem 1.15rem;line-height:1.55;color:var(--ink-soft)}
+.panorama-feature figcaption strong{color:var(--ink)}
+.section-kicker{display:inline-flex;align-items:center;gap:.45rem;margin-top:2rem;padding:.45rem .75rem;border-radius:999px;background:#efe6d1;color:#5b4524;font-weight:700;font-size:.88rem}
+.campground-scorecard{display:grid;grid-template-columns:minmax(210px,.7fr) 2fr;gap:1.2rem;padding:1.2rem;border-radius:24px;background:linear-gradient(135deg,#18372d,#285548);color:#fff;box-shadow:0 16px 40px rgba(24,55,45,.2)}
+.scorecard-rating{display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:1rem;border:1px solid rgba(255,255,255,.18);border-radius:18px;background:rgba(255,255,255,.08)}
+.scorecard-rating span{text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;opacity:.8}.scorecard-rating strong{font-size:1.75rem;margin:.55rem 0}.scorecard-rating em{font-style:normal;font-weight:700}
+.campground-scorecard .review-grid{margin:0}.campground-scorecard .review-grid p{background:#fff;color:var(--ink);display:flex;flex-direction:column;gap:.35rem}.campground-scorecard .review-grid p strong{color:#8a5b20}.campground-scorecard .review-grid p span{line-height:1.45}
+.related-card{margin:2.5rem 0 0;padding:1.5rem;border-radius:22px;background:#f0f5f2;border:1px solid #d4e3db}.related-card>span{font-weight:700;color:#32614f}.related-card h3{font-family:Fraunces,serif;font-size:1.65rem;margin:.45rem 0}.related-card p{margin-top:0}
+.radio-hero{min-height:430px;display:grid;place-items:center;padding:7rem 1.25rem 4rem;text-align:center;color:white;background:radial-gradient(circle at 50% 28%,rgba(242,195,94,.2),transparent 24%),linear-gradient(150deg,#10251f,#21483c 58%,#122a23)}
+.radio-hero>div{max-width:820px}.radio-hero h1{font-family:Fraunces,serif;font-size:clamp(3rem,8vw,6.2rem);margin:.3rem 0}.radio-hero p:last-child{font-size:1.2rem;max-width:700px;margin-inline:auto}
+.radio-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1.1rem;margin-top:2rem}.radio-cards article{padding:1.4rem;border-radius:20px;background:#fff;border:1px solid #dce7e1;box-shadow:0 10px 28px rgba(32,61,51,.08)}.radio-cards article>span{font-size:2rem}.radio-cards h2{margin:.55rem 0 .45rem;font-size:1.45rem}.radio-cards p{margin:0;line-height:1.6;color:var(--ink-soft)}
+.feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.feature-list>div{padding:1.2rem;border-left:4px solid #9b6f2f;background:#fff;border-radius:0 16px 16px 0}.feature-list strong{font-size:1.05rem}.feature-list p{margin:.35rem 0 0;color:var(--ink-soft)}
+.contact-cta{text-align:center;margin-top:2.2rem;padding:2rem;border-radius:24px;background:#18372d;color:#fff}.contact-cta h2{font-family:Fraunces,serif;font-size:2rem;margin:0}.contact-cta p{margin:.5rem 0 1.2rem}
+@media(max-width:760px){.campground-scorecard{grid-template-columns:1fr}.radio-cards,.feature-list{grid-template-columns:1fr}.panorama-feature{border-radius:16px}.panorama-feature img{height:260px}}
