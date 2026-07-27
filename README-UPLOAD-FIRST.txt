@@ -12,3 +12,7 @@ UPLOAD INSTRUCTIONS
 6. Commit the upload and let Cloudflare Pages redeploy.
 
 Do not upload the outer folder itself. Upload its contents.
+
+
+VERSION 3.3.2 CONTACT UPDATE
+This package adds contact.html, a Contact menu link on every page, and mailto links for trailtater@gmail.com. Upload every file in this folder to the repository root and allow replacements.
