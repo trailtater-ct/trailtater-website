@@ -263,3 +263,234 @@
     font-size:1.02rem;
   }
 }
+
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4.2 — Gettysburg Premium
+   ========================================================= */
+.gettysburg-premium{
+  background:#fbfaf6;
+}
+.gettysburg-premium .trip-hero{
+  min-height:92vh;
+  display:grid;
+  align-items:end;
+  position:relative;
+  overflow:hidden;
+}
+.gettysburg-premium .trip-hero>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.gettysburg-premium .hero-shade{
+  background:
+    linear-gradient(90deg,rgba(8,22,17,.9),rgba(10,26,20,.52) 58%,rgba(8,20,16,.18)),
+    linear-gradient(0deg,rgba(7,19,14,.82),transparent 58%);
+}
+.gettysburg-premium .trip-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:920px;
+  padding:155px clamp(24px,7vw,110px) 82px;
+}
+.gettysburg-premium .trip-hero h1{
+  max-width:900px;
+  font-size:clamp(3.6rem,8vw,7.5rem);
+  line-height:.94;
+  letter-spacing:-.045em;
+}
+.gettysburg-premium .trip-hero-content>p:last-of-type{
+  max-width:720px;
+  font-size:clamp(1.1rem,2vw,1.34rem);
+  line-height:1.65;
+}
+.gettysburg-premium .hero-scroll{
+  position:absolute;
+  z-index:3;
+  right:clamp(24px,5vw,72px);
+  bottom:34px;
+}
+.journal-nav{
+  position:sticky;
+  top:78px;
+  z-index:20;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:12px max(18px,calc((100vw - 1180px)/2));
+  background:rgba(251,250,246,.96);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 8px 22px rgba(30,45,38,.06);
+  scrollbar-width:none;
+}
+.journal-nav::-webkit-scrollbar{display:none}
+.journal-nav a{
+  flex:0 0 auto;
+  padding:9px 13px;
+  border-radius:999px;
+  color:var(--forest);
+  background:#eee5d5;
+  font-size:.82rem;
+  font-weight:800;
+  text-decoration:none;
+}
+.journal-nav a:hover,
+.journal-nav a:focus-visible{
+  background:var(--forest);
+  color:white;
+}
+.premium-journal{
+  max-width:1040px;
+}
+.premium-journal .trip-meta{
+  margin-top:-60px;
+  position:relative;
+  z-index:4;
+  border-radius:22px;
+  box-shadow:0 22px 55px rgba(27,43,36,.15);
+}
+.premium-journal .lede{
+  max-width:850px;
+  margin:75px auto;
+  font:700 clamp(1.7rem,3.2vw,2.7rem)/1.35 "Fraunces",Georgia,serif;
+  text-align:center;
+  color:var(--forest);
+}
+.premium-journal>h2{
+  scroll-margin-top:155px;
+  margin-top:95px;
+  font-size:clamp(2.35rem,4.8vw,4.25rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+}
+.premium-journal>h2:after{
+  content:"";
+  display:block;
+  width:72px;
+  height:5px;
+  margin-top:18px;
+  border-radius:9px;
+  background:#cf8d44;
+}
+.premium-journal>p{
+  max-width:800px;
+  font-size:1.08rem;
+  line-height:1.82;
+}
+.premium-journal .panorama-feature{
+  margin:70px calc(50% - 50vw);
+}
+.premium-journal .panorama-feature img{
+  max-height:680px;
+  object-fit:cover;
+}
+.premium-journal .story-photo,
+.premium-journal .panorama-feature{
+  overflow:hidden;
+  border-radius:22px;
+  box-shadow:0 18px 42px rgba(28,45,38,.11);
+}
+.premium-journal .story-photo img,
+.premium-journal .panorama-feature img{
+  transition:transform .45s ease;
+}
+.premium-journal .story-photo:hover img,
+.premium-journal .panorama-feature:hover img{
+  transform:scale(1.018);
+}
+.premium-journal blockquote{
+  margin:60px auto;
+  max-width:830px;
+  padding:45px 48px;
+  border-left:0;
+  border-radius:24px;
+  background:#18372d;
+  color:white;
+  font:700 clamp(1.45rem,2.9vw,2.35rem)/1.45 "Fraunces",Georgia,serif;
+  box-shadow:0 22px 48px rgba(24,55,45,.18);
+}
+.premium-score-section{
+  scroll-margin-top:150px;
+  margin:100px 0 70px;
+  padding:clamp(28px,5vw,54px);
+  border-radius:30px;
+  background:#efe5cf;
+}
+.score-heading{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:25px;
+}
+.score-heading h2{
+  margin:.2em 0 0;
+  font:700 clamp(2.2rem,4vw,3.6rem)/1.05 "Fraunces",Georgia,serif;
+}
+.premium-scorecard{
+  margin:0;
+  background:white;
+  box-shadow:0 16px 38px rgba(48,43,31,.1);
+}
+.premium-scorecard .scorecard-rating strong{
+  font-size:clamp(1.5rem,4vw,2.45rem);
+  letter-spacing:.08em;
+}
+.premium-scorecard .scorecard-rating em{
+  max-width:360px;
+  line-height:1.45;
+}
+.gettysburg-premium .gettysburg-gallery figure{
+  border-radius:18px;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 12px 28px rgba(25,43,34,.1);
+}
+.gettysburg-premium .gettysburg-gallery img{
+  transition:transform .35s ease;
+}
+.gettysburg-premium .gettysburg-gallery figure:hover img{
+  transform:scale(1.035);
+}
+.gettysburg-premium .next-trip{
+  text-align:center;
+  padding-top:100px;
+  padding-bottom:110px;
+}
+@media(max-width:900px){
+  .journal-nav{top:88px}
+  .premium-journal .trip-meta{margin-top:-35px}
+  .score-heading{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:700px){
+  .gettysburg-premium .trip-hero{min-height:85vh}
+  .gettysburg-premium .trip-hero-content{padding:135px 22px 70px}
+  .gettysburg-premium .trip-hero h1{font-size:clamp(3rem,15vw,5rem)}
+  .gettysburg-premium .hero-scroll{display:none}
+  .journal-nav{top:88px;padding-inline:12px}
+  .premium-journal .trip-meta{
+    margin-top:-22px;
+    border-radius:18px;
+  }
+  .premium-journal .lede{
+    margin:55px auto;
+    text-align:left;
+  }
+  .premium-journal>h2{margin-top:72px;scroll-margin-top:150px}
+  .premium-journal .panorama-feature{
+    margin:50px -24px;
+    border-radius:0;
+  }
+  .premium-journal blockquote{
+    padding:30px 25px;
+    margin:45px 0;
+  }
+  .premium-score-section{
+    margin-inline:-8px;
+    padding:28px 20px;
+    border-radius:22px;
+  }
+}

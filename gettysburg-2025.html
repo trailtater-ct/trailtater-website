@@ -11,9 +11,12 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html" aria-label="Trail Tater home"><span class="brand-mark">🥔</span><span>Trail Tater</span></a>
+<body class="gettysburg-premium">
+  <header class="site-header v4-header">
+    <a class="brand" href="index.html" aria-label="Trail Tater home">
+      <span class="brand-mark">🥔</span>
+      <span class="brand-copy"><strong class="brand-name">Trail Tater</strong><small class="brand-tagline">Friends made along the way</small></span>
+    </a>
     <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
       <a href="index.html#map">Travel Map</a><a href="index.html#adventures">Adventures</a><a href="#gallery">Gallery</a><a href="#campground-review">Campground Review</a><a href="index.html#crew">Crew</a>
@@ -29,10 +32,25 @@
         <h1>Gettysburg, Pennsylvania</h1>
         <p class="trip-location">Where history camped with us</p>
         <p>Family, battlefield history, tent camping—and the trip that convinced us it was time to buy Trail Tater.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#story-start">Begin the story</a>
+          <a class="button ghost" href="#campground-review">See the Tater score</a>
+        </div>
       </div>
+      <a class="hero-scroll" href="#story-start" aria-label="Continue to the Gettysburg story">↓</a>
     </section>
 
-    <article class="trip-article section">
+    <nav class="journal-nav" aria-label="Gettysburg story chapters">
+      <a href="#basecamp">Basecamp</a>
+      <a href="#sunrise">Sunrise</a>
+      <a href="#battlefield">Battlefield</a>
+      <a href="#movie-night">Movie Night</a>
+      <a href="#hallowed-ground">Cemeteries</a>
+      <a href="#campground-review">Tater Score</a>
+      <a href="#gallery">Gallery</a>
+    </nav>
+
+    <article id="story-start" class="trip-article section premium-journal">
       <div class="trip-meta">
         <div><span>Stayed</span><strong>August 2025</strong></div>
         <div><span>Camping style</span><strong>Tent camping</strong></div>
@@ -49,7 +67,7 @@
         <figcaption><strong>A wider look across Gettysburg.</strong> The battlefield is the kind of landscape that asks you to stop, look farther, and remember what happened here.</figcaption>
       </figure>
 
-      <h2>Our basecamp at Artillery Ridge</h2>
+      <h2 id="basecamp">Our basecamp at Artillery Ridge</h2>
       <p>We stayed at <strong>Artillery Ridge Campground &amp; Horse Park</strong> on tent sites <strong>30 and 31</strong>, both with water and electric. Site 30 was a corner site and gave us plenty of room for my two-room tent, camp kitchen, and a 10-by-20-foot Easy-Up with sidewalls. Next door, my niece Tracy camped with her daughters Zoey and Kalley, while my sister Eileen had her own tent.</p>
       <p>Right from the start, the campground impressed me. The office and store staff were friendly and helpful, and the maintenance staff we met were just as welcoming. The restrooms and showers were consistently clean—and it was the first campground where I had ever seen a <strong>firewood vending machine</strong>.</p>
 
@@ -60,14 +78,14 @@
 
       <div class="trail-tip"><span>🥔 Trail Tater Tip</span><p>George Spangler Farm tour tickets were available right in the campground office and store.</p></div>
 
-      <h2>Sunrise over historic ground</h2>
+      <h2 id="sunrise">Sunrise over historic ground</h2>
       <p>Artillery Ridge sits on ground associated with the Union Army's artillery reserve. Near our campsite, just over a stone wall, a paved trail leads toward the George Spangler Farm. That trail is the paved area visible in the foreground of our sunrise photographs.</p>
       <p>Early in the morning, the fields were quiet and covered in mist. Knowing what had happened across this landscape made the peaceful view feel even more powerful. History was not somewhere we drove to from the campground—it was all around us before breakfast.</p>
       <figure class="story-photo wide"><img src="gettysburg-sunrise-trail.jpg" alt="Morning mist beside the paved trail leading toward George Spangler Farm"><figcaption>Sunrise near our campsite, looking across the paved trail toward the historic landscape.</figcaption></figure>
 
       <div class="trail-tip"><span>🥔 Trail Tater Tip</span><p>Give Gettysburg more than one day. The museum, battlefield roads, historic homes, cemetery, and overlooks each tell a different part of the story.</p></div>
 
-      <h2>A family journey through Gettysburg</h2>
+      <h2 id="battlefield">A family journey through Gettysburg</h2>
       <p>We covered a lot of ground during the trip. We took a double-decker battlefield bus tour, toured the National Military Park Museum and Cyclorama, visited the Shriver House and Jennie Wade House, and explored Little Round Top and Devil's Den.</p>
       <p>The trip was not about checking attractions off a list. Standing in the places we had read about made the history more immediate, especially when the same ridges, fields, stone walls, and monuments appeared again later in photographs and film.</p>
 
@@ -81,14 +99,14 @@
       </div>
 
       <div class="section-kicker">🎬 Campground memory</div>
-      <h2>Movie night on the battlefield</h2>
+      <h2 id="movie-night">Movie night on the battlefield</h2>
       <p>Before the trip, I packed a USB-C-to-HDMI cable and a projector. One evening, we turned the back wall of the Easy-Up into an outdoor movie screen and watched <em>Gettysburg</em> right at the campground.</p>
       <p>We had spent the day visiting the very places shown in the film. Watching the story unfold while camped on historic ground made this more than an ordinary campground movie night. It tied the whole trip together.</p>
       <figure class="story-photo wide"><img src="gettysburg-campfire-night.jpg" alt="Family gathered around a campfire at night"><figcaption>Campground nights were made for firelight, family, and one unforgettable outdoor showing of <em>Gettysburg</em>.</figcaption></figure>
 
       <div class="trail-tip"><span>🥔 Trail Tater Tip</span><p>Build quiet time into a National Cemetery visit. This is one place where slowing down matters more than fitting in one more stop.</p></div>
 
-      <h2>Hallowed ground</h2>
+      <h2 id="hallowed-ground">Hallowed ground</h2>
       <p>As we had done during our 2024 Rhode Island trip, we made cemetery visits part of the journey—this time, two of them. First came Gettysburg National Cemetery, followed by the cemetery where Jennie Wade was laid to rest.</p>
       <blockquote>“On Fame's eternal camping-ground, their silent tents are spread, and Glory guards with solemn round the bivouac of the dead.”</blockquote>
       <p>The words felt especially meaningful on a family camping trip. The National Cemetery was not simply another attraction. It was a place to slow down, walk among the rows of markers, and remember that the battlefield's history is measured in individual lives.</p>
@@ -107,9 +125,13 @@
       <p>Some of my favorite souvenirs were the old-fashioned Gettysburg sodas. The bottles included Yankee Cola, Rebel Red Birch Beer, Fighting Irishade, Southern Style Vanilla, Root Beer, and Doctor G's 162nd Gettysburg Orange Cream. The drinks disappeared, but the bottles stayed as a colorful reminder of the trip.</p>
       <figure class="story-photo wide"><img src="gettysburg-sodas-together.jpg" alt="Six collectible Old Gettysburg soda bottles lined up together"><figcaption>Gettysburg in a bottle—six labels, six flavors, and one very memorable souvenir collection.</figcaption></figure>
 
-      <h2 id="campground-review">Trail Tater campground review</h2>
-      <div class="campground-scorecard">
-        <div class="scorecard-rating"><span>Trail Tater rating</span><strong>🥔🥔🥔🥔🥔</strong><em>5 out of 5 taters</em></div>
+      <section id="campground-review" class="premium-score-section">
+      <div class="score-heading">
+        <div><p class="eyebrow">Official Trail Tater scorecard</p><h2>Artillery Ridge Campground</h2></div>
+        <a class="text-link" href="tater-rating.html">How the Tater Rating System works →</a>
+      </div>
+      <div class="campground-scorecard premium-scorecard">
+        <div class="scorecard-rating"><span>Final Trail Tater rating</span><strong aria-label="Five out of five taters">🥔🥔🥔🥔🥔</strong><em>Pack the camper—we would return tomorrow.</em></div>
         <div class="review-grid">
           <p><strong>Sites</strong><span>Water-and-electric tent sites 30 and 31; site 30 was a roomy corner site.</span></p>
           <p><strong>Staff</strong><span>Friendly, helpful office/store and maintenance staff.</span></p>
@@ -118,6 +140,7 @@
           <p><strong>Return trip?</strong><span>Absolutely.</span></p>
         </div>
       </div>
+      </section>
 
       <h2>The trip that created Trail Tater</h2>
       <p>There is one last fact that makes Gettysburg different from every trip that came after it: <strong>Trail Tater did not exist yet.</strong> We were still tent campers.</p>
@@ -153,7 +176,10 @@
     <section class="section next-trip"><p class="eyebrow">Back to basecamp</p><h2>More Trail Tater adventures</h2><p>Return to the travel map, crew, rig, and the growing adventure archive.</p><a class="button primary" href="index.html#adventures">Back to TrailTater.com</a></section>
   </main>
 
-  <footer><strong>Trail Tater</strong><span>History, campgrounds, family, and adventure.</span><a class="footer-email" href="mailto:trailtater@gmail.com">trailtater@gmail.com</a><span>© <span id="year"></span> Trail Tater</span></footer>
+  <footer class="v4-footer">
+    <div class="footer-identity"><strong>🥔 Trail Tater</strong><span>History, campgrounds, family and friends along the way.</span></div>
+    <div class="footer-contact"><a class="footer-email" href="mailto:trailtater@gmail.com">trailtater@gmail.com</a><span>No stars were harmed. © <span id="year"></span> Trail Tater</span></div>
+  </footer>
   <script src="script.js"></script>
 </body>
 </html>
