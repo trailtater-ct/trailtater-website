@@ -57,3 +57,7 @@
 .feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.feature-list>div{padding:1.2rem;border-left:4px solid #9b6f2f;background:#fff;border-radius:0 16px 16px 0}.feature-list strong{font-size:1.05rem}.feature-list p{margin:.35rem 0 0;color:var(--ink-soft)}
 .contact-cta{text-align:center;margin-top:2.2rem;padding:2rem;border-radius:24px;background:#18372d;color:#fff}.contact-cta h2{font-family:Fraunces,serif;font-size:2rem;margin:0}.contact-cta p{margin:.5rem 0 1.2rem}
 @media(max-width:760px){.campground-scorecard{grid-template-columns:1fr}.radio-cards,.feature-list{grid-template-columns:1fr}.panorama-feature{border-radius:16px}.panorama-feature img{height:260px}}
+
+/* TrailTater 4.0 Alpha */
+.tater-score{border:2px solid #8b5a2b;border-radius:10px;padding:1rem;background:#fff8e8;margin:1rem 0}
+.tater-score h3{margin-top:0}
