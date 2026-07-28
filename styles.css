@@ -551,3 +551,13 @@
   .clarks-grid img{height:auto}.lost-river-story blockquote{padding:30px 24px}
   .lost-river-review{margin-inline:-8px;padding:28px 20px}.tater-verdict{align-items:flex-start;flex-direction:column}
 }
+
+
+/* Alpha 4.5 — Lake Compounce origin story */
+.lake-compounce-hero img{object-position:center 42%}
+.compounce-site-feature{align-items:stretch}
+.compounce-site-feature .campfire-note{margin:0}
+.compounce-dogs{max-width:760px;margin-inline:auto}
+.compounce-dogs img{width:100%;max-height:900px;object-fit:cover;object-position:center}
+.compounce-firsts{margin-top:4rem}
+@media (max-width:760px){.lake-compounce-hero img{object-position:center}.compounce-dogs img{max-height:none}}

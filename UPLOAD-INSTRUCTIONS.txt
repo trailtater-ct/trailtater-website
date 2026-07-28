@@ -1,35 +1,20 @@
-Trail Tater 4.0 Alpha 4.4 — Lost River Valley
+TRAIL TATER 4.0 — ALPHA 4.5 LAKE COMPOUNCE UPDATE
 
-UPLOAD ALL FILES IN THIS ZIP.
+Upload every file in this ZIP to the root of the Trail Tater GitHub repository.
+Choose Replace/Overwrite when asked.
 
-New page:
-- lost-river-valley.html
+This update adds:
+- lake-compounce-2025.html
+- Lake Compounce campground pin linked to the new page
+- Lake Compounce adventure card on the homepage
+- The original neighboring-bulldogs photo
+- Updated map statistics: 5 campgrounds / 5 states
+- Trail Tater Firsts and Phantom Fall Fest details
 
-Updated shared files:
-- index.html
-- styles.css
-- script.js
-
-New photographs:
-- lost-river-road-north.jpg
-- lost-river-cat-figures.jpg
-- lost-river-stream-rain.jpg
-- lost-river-stream-evening.jpg
-- lost-river-camp-night.jpg
-- lost-river-camp-table.jpg
-- lost-river-family-walk.jpg
-- lost-river-site-17-tents.jpg
-- lost-river-campground-map.jpg
-- clarks-bears-ken-lisa.jpg
-- clarks-bears-family.jpg
-- clarks-bears-girls.jpg
-- white-mountains-moose.jpg
-
-Verified story details:
-- Double Site 17
-- Water hookup only
-- Directly on the banks of Lost River
-- First campground the family returned to for three consecutive years
-- Clark's Bears images are photo props, not rides
-
-Upload the contents of this ZIP to the repository root and replace matching files.
+Trip facts included:
+- October 10–12, 2025
+- Ken, Lisa, Billie and Billie's boyfriend
+- Pull-through water/electric site in the front row
+- Near office/store and bathrooms/showers
+- Billie and her boyfriend attended Phantom Fall Fest
+- First decal, first magnet and Connecticut as the first state filled on the U.S. map

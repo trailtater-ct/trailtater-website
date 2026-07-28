@@ -26,10 +26,11 @@ document.addEventListener('click', (event) => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const trips = [
-  {year:'2023', name:'Lost River Valley Campground', place:'North Woodstock, New Hampshire', lat:44.03, lng:-71.69, note:'White Mountains camping and a place worth returning to.'},
-  {year:'2024', name:'Burlingame State Park Campground', place:'Charlestown, Rhode Island', lat:41.38, lng:-71.70, note:'Coastal camping beside Watchaug Pond.'},
-  {year:'2025', name:'Artillery Ridge Campground', place:'Gettysburg, Pennsylvania', lat:39.81, lng:-77.22, note:'The tent-camping trip that inspired Trail Tater.', url:'gettysburg-2025.html'},
-  {year:'2026', name:'Sandy Pond Campground', place:'Plymouth, Massachusetts', lat:41.82, lng:-70.58, note:'The upcoming Mayflower-ancestor flagship journey.'}
+  {id:'lost-river-2023', year:'2023', name:'Lost River Valley Campground', place:'North Woodstock, New Hampshire', lat:44.03, lng:-71.69, note:'White Mountains camping and a place worth returning to.'},
+  {id:'burlingame-2024', year:'2024', name:'Burlingame State Park Campground', place:'Charlestown, Rhode Island', lat:41.38, lng:-71.70, note:'Coastal camping beside Watchaug Pond.'},
+  {id:'lake-compounce-2025', year:'2025', name:'Lake Compounce Campground', place:'Bristol, Connecticut', lat:41.6416, lng:-72.9233, note:'Trail Tater’s first RV weekend, first campground decal and the first state filled on the map.', url:'lake-compounce-2025.html'},
+  {id:'gettysburg-2025', year:'2025', name:'Artillery Ridge Campground', place:'Gettysburg, Pennsylvania', lat:39.81, lng:-77.22, note:'The tent-camping trip that inspired Trail Tater.', url:'gettysburg-2025.html'},
+  {id:'plymouth-2026', year:'2026', name:'Sandy Pond Campground', place:'Plymouth, Massachusetts', lat:41.82, lng:-70.58, note:'The upcoming Mayflower-ancestor flagship journey.'}
 ];
 
 const list = document.getElementById('trip-list');
@@ -61,7 +62,7 @@ if (window.L && document.getElementById('travel-map')) {
   trips.forEach((trip) => {
     const marker = L.marker([trip.lat,trip.lng], {icon}).addTo(map);
     marker.bindPopup(`<div class="map-popup"><span class="year">${trip.year}</span><h3>${trip.name}</h3><p><strong>${trip.place}</strong></p><p>${trip.note}</p>${trip.url ? `<p><a href="${trip.url}">Read the full story →</a></p>` : ''}</div>`);
-    markerByYear.set(trip.year, marker);
+    markerByYear.set(trip.id || `${trip.year}-${trip.name}`, marker);
   });
 
   const bounds = L.latLngBounds(trips.map(t => [t.lat,t.lng]));
@@ -72,7 +73,7 @@ if (window.L && document.getElementById('travel-map')) {
       buttons.forEach(item => item.button.classList.remove('active'));
       button.classList.add('active');
       map.setView([trip.lat,trip.lng], 9, {animate:true});
-      markerByYear.get(trip.year)?.openPopup();
+      markerByYear.get(trip.id || `${trip.year}-${trip.name}`)?.openPopup();
     });
   });
 } else {
