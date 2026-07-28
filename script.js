@@ -36,10 +36,15 @@ const trips = [
 const list = document.getElementById('trip-list');
 const buttons = [];
 trips.slice().reverse().forEach((trip) => {
-  const button = document.createElement('button');
-  button.type = 'button';
+  const button = document.createElement(trip.url ? 'a' : 'button');
+  if (trip.url) {
+    button.href = trip.url;
+    button.setAttribute('aria-label', `Read the ${trip.name} story`);
+  } else {
+    button.type = 'button';
+  }
   button.className = 'trip-button';
-  button.innerHTML = `<span class="trip-year">${trip.year}</span><strong>${trip.name}</strong><span>${trip.place}</span>`;
+  button.innerHTML = `<span class="trip-year">${trip.year}</span><strong>${trip.name}</strong><span>${trip.place}</span>${trip.url ? '<span class="trip-story-link">Read the story →</span>' : ''}`;
   list?.appendChild(button);
   buttons.push({button, trip});
 });
@@ -69,6 +74,12 @@ if (window.L && document.getElementById('travel-map')) {
   map.fitBounds(bounds.pad(.25));
 
   buttons.forEach(({button,trip}) => {
+    if (trip.url) {
+      button.addEventListener('mouseenter', () => {
+        markerByYear.get(trip.id || `${trip.year}-${trip.name}`)?.openPopup();
+      });
+      return;
+    }
     button.addEventListener('click', () => {
       buttons.forEach(item => item.button.classList.remove('active'));
       button.classList.add('active');
