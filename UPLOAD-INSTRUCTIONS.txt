@@ -1,20 +1,11 @@
-Trail Tater 4.0 Alpha 4.2 — Gettysburg Premium Update
+Trail Tater 4.0 Alpha 4.3 — Plymouth Journal Framework
 
-UPLOAD ONLY THESE FILES:
-- gettysburg-2025.html
+UPLOAD ONLY:
+- plymouth-2026.html
+- index.html
 - styles.css
 - script.js
 
-NO PHOTOGRAPHS NEED TO BE UPLOADED AGAIN.
+NO PHOTOGRAPHS NEED TO BE UPLOADED.
 
-What changed:
-- Gettysburg now uses the polished Trail Tater header and footer.
-- Cinematic full-screen opening with direct story and score buttons.
-- Sticky mobile-friendly chapter navigation.
-- Stronger long-form journal typography and spacing.
-- Full-width panoramic battlefield presentation.
-- More polished photo cards and gallery interactions.
-- Premium official Tater scorecard linked to the rating-system page.
-- The “No stars were harmed” footer personality continues here too.
-
-Upload these three files to the repository root and replace the existing versions.
+Adds the Plymouth journal, daily entry cards, ancestor trail, Sandy Pond framework, destination cards, pending Tater scorecard and photo placeholders.
