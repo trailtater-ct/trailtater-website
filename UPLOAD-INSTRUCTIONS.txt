@@ -1,20 +1,24 @@
-TRAIL TATER 4.0 — ALPHA 4.5 LAKE COMPOUNCE UPDATE
+TRAIL TATER 4.0 — ALPHA 4.5.1 MAP LINK FIX
 
-Upload every file in this ZIP to the root of the Trail Tater GitHub repository.
-Choose Replace/Overwrite when asked.
+This is a small update package for the current Trail Tater website.
 
-This update adds:
-- lake-compounce-2025.html
-- Lake Compounce campground pin linked to the new page
-- Lake Compounce adventure card on the homepage
-- The original neighboring-bulldogs photo
-- Updated map statistics: 5 campgrounds / 5 states
-- Trail Tater Firsts and Phantom Fall Fest details
+UPLOAD THIS FILE TO THE ROOT OF THE GITHUB REPOSITORY:
 
-Trip facts included:
-- October 10–12, 2025
-- Ken, Lisa, Billie and Billie's boyfriend
-- Pull-through water/electric site in the front row
-- Near office/store and bathrooms/showers
-- Billie and her boyfriend attended Phantom Fall Fest
-- First decal, first magnet and Connecticut as the first state filled on the U.S. map
+  script.js
+
+When GitHub asks whether to replace the existing file, choose REPLACE/OVERWRITE.
+Cloudflare Pages should redeploy automatically after the commit.
+
+WHAT THIS FIXES
+- Lost River Valley map pin now links to lost-river-valley.html
+- Burlingame / Charlestown map pin now links to charlestown-ri.html
+- Lake Compounce and Gettysburg links remain unchanged
+- Plymouth remains without a story link until its first trip update is published
+
+QUICK TEST AFTER DEPLOYMENT
+1. Open TrailTater.com and scroll to the travel map.
+2. Tap Lost River Valley, then tap “Read the full story.”
+3. Return to the map and repeat for Burlingame State Park.
+4. Confirm Gettysburg and Lake Compounce still open correctly.
+
+Prepared July 28, 2026.

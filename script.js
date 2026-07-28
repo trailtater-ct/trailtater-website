@@ -26,8 +26,8 @@ document.addEventListener('click', (event) => {
 document.getElementById('year').textContent = new Date().getFullYear();
 
 const trips = [
-  {id:'lost-river-2023', year:'2023', name:'Lost River Valley Campground', place:'North Woodstock, New Hampshire', lat:44.03, lng:-71.69, note:'White Mountains camping and a place worth returning to.'},
-  {id:'burlingame-2024', year:'2024', name:'Burlingame State Park Campground', place:'Charlestown, Rhode Island', lat:41.38, lng:-71.70, note:'Coastal camping beside Watchaug Pond.'},
+  {id:'lost-river-2023', year:'2023', name:'Lost River Valley Campground', place:'North Woodstock, New Hampshire', lat:44.03, lng:-71.69, note:'White Mountains camping and a place worth returning to.', url:'lost-river-valley.html'},
+  {id:'burlingame-2024', year:'2024', name:'Burlingame State Park Campground', place:'Charlestown, Rhode Island', lat:41.38, lng:-71.70, note:'Coastal camping beside Watchaug Pond.', url:'charlestown-ri.html'},
   {id:'lake-compounce-2025', year:'2025', name:'Lake Compounce Campground', place:'Bristol, Connecticut', lat:41.6416, lng:-72.9233, note:'Trail Tater’s first RV weekend, first campground decal and the first state filled on the map.', url:'lake-compounce-2025.html'},
   {id:'gettysburg-2025', year:'2025', name:'Artillery Ridge Campground', place:'Gettysburg, Pennsylvania', lat:39.81, lng:-77.22, note:'The tent-camping trip that inspired Trail Tater.', url:'gettysburg-2025.html'},
   {id:'plymouth-2026', year:'2026', name:'Sandy Pond Campground', place:'Plymouth, Massachusetts', lat:41.82, lng:-70.58, note:'The upcoming Mayflower-ancestor flagship journey.'}
