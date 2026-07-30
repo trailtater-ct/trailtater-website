@@ -1,10 +1,14 @@
-UPLOAD ONLY:
-- plymouth-2026.html
-- plymouth-day1-campsite-overview.jpg
-- plymouth-day1-starlink.jpg
+TRAIL TATER — PLYMOUTH DAY 2 RAINY MORNING UPDATE
 
-DO NOT upload this instruction file.
-This package contains NO index.html, so it cannot replace the homepage.
+Upload every file in this ZIP to the main/root level of the Trail Tater GitHub repository.
+When asked, replace index.html and plymouth-2026.html.
 
-Upload the three files to the root of the GitHub repository and commit.
-Page address: https://trailtater.com/plymouth-2026.html
+This update adds:
+- Day 2 rainy-morning journal entry
+- Rainy camp kitchen photo
+- Wild turkey photo
+- Pancakes, bacon, sausage, and breakfast plate photos
+- Sade receiving the first pancake
+- Homepage status changed to Day 2 rainy morning now live
+
+No other trip pages are changed.
