@@ -1,0 +1,22 @@
+TRAIL TATER CURRENT WEBSITE UPDATE — JULY 30, 2026
+
+This is a COMPLETE website package built from the restored working baseline.
+
+It includes:
+- Gettysburg map and story link
+- Lost River Valley map and story link
+- Burlingame map and story link
+- Lake Compounce restored on the homepage and map
+- Sandy Pond / Plymouth linked from the homepage and map
+- Plymouth Day 1 journal
+- Trail Tater glowing potato-eyes photo
+
+PHONE UPLOAD METHOD
+1. Open the trailtater-website repository in GitHub.
+2. Choose Add file, then Upload files.
+3. Upload ALL files from this package into the repository root.
+4. Allow files with the same names to be replaced.
+5. Commit the changes.
+6. Wait for Cloudflare Pages to deploy.
+
+Important: the files must be in the repository root, not inside another folder.

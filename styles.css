@@ -57,3 +57,507 @@
 .feature-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1rem}.feature-list>div{padding:1.2rem;border-left:4px solid #9b6f2f;background:#fff;border-radius:0 16px 16px 0}.feature-list strong{font-size:1.05rem}.feature-list p{margin:.35rem 0 0;color:var(--ink-soft)}
 .contact-cta{text-align:center;margin-top:2.2rem;padding:2rem;border-radius:24px;background:#18372d;color:#fff}.contact-cta h2{font-family:Fraunces,serif;font-size:2rem;margin:0}.contact-cta p{margin:.5rem 0 1.2rem}
 @media(max-width:760px){.campground-scorecard{grid-template-columns:1fr}.radio-cards,.feature-list{grid-template-columns:1fr}.panorama-feature{border-radius:16px}.panorama-feature img{height:260px}}
+
+/* TrailTater 4.0 Alpha */
+.tater-score{border:2px solid #8b5a2b;border-radius:10px;padding:1rem;background:#fff8e8;margin:1rem 0}
+.tater-score h3{margin-top:0}
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4 — Around the Campfire redesign
+   ========================================================= */
+.home-v4{background:#fbfaf6}
+.v4-header{background:rgba(18,42,34,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.12)}
+.v4-header .brand>span:last-child{display:flex;flex-direction:column;line-height:1.05}
+.v4-header .brand small{font-size:.67rem;letter-spacing:.08em;text-transform:uppercase;opacity:.68;margin-top:5px}
+.v4-hero{position:relative;min-height:94vh;display:grid;align-items:end;overflow:hidden;background:#10281f}
+.v4-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center}
+.v4-hero-overlay{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,22,17,.92) 0%,rgba(11,30,23,.68) 48%,rgba(9,22,18,.2) 76%),linear-gradient(0deg,rgba(7,18,14,.74),transparent 52%)}
+.v4-hero-content{position:relative;z-index:1;color:#fff;max-width:900px;padding:160px clamp(22px,7vw,110px) 92px}
+.v4-hero h1{font:700 clamp(3.4rem,8vw,7.4rem)/.96 "Fraunces",Georgia,serif;letter-spacing:-.045em;margin:.12em 0 .25em}
+.hero-lede{max-width:760px;font-size:clamp(1.08rem,2vw,1.35rem);line-height:1.65;color:#ecf2ee}
+.hero-badges{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px}
+.hero-badges span{padding:9px 13px;border-radius:999px;border:1px solid rgba(255,255,255,.24);background:rgba(9,26,20,.38);font-size:.87rem;font-weight:700}
+.hero-scroll{position:absolute;z-index:2;right:clamp(24px,5vw,74px);bottom:34px;width:48px;height:48px;display:grid;place-items:center;border:1px solid rgba(255,255,255,.45);border-radius:50%;color:white;text-decoration:none;font-size:1.3rem}
+.v4-campfire{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(270px,.75fr);gap:clamp(36px,7vw,100px);align-items:center;padding-top:110px;padding-bottom:110px}
+.v4-campfire h2{font:700 clamp(2.7rem,5.5vw,5.3rem)/1.02 "Fraunces",Georgia,serif;letter-spacing:-.035em;margin:.18em 0 .35em}
+.large-copy{font-size:clamp(1.16rem,2vw,1.38rem);line-height:1.7;color:var(--forest)}
+.campfire-note{position:relative;padding:38px 32px 32px;border-radius:28px;background:linear-gradient(145deg,#18372d,#284f42);color:white;box-shadow:0 24px 55px rgba(17,47,37,.23);transform:rotate(1.5deg)}
+.campfire-note:before{content:"";position:absolute;inset:10px;border:1px solid rgba(245,206,119,.32);border-radius:21px;pointer-events:none}
+.note-icon{display:block;font-size:3.1rem;margin-bottom:16px}.campfire-note p{font:700 clamp(1.35rem,2.4vw,2rem)/1.42 "Fraunces",Georgia,serif;margin:.2em 0 1em}.campfire-note strong{color:#f3d285}
+.latest-adventure{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(380px,.8fr);min-height:680px;background:#18372d;color:#fff}
+.latest-image{position:relative;min-height:540px;overflow:hidden}.latest-image img{width:100%;height:100%;object-fit:cover}
+.latest-ribbon{position:absolute;left:24px;top:24px;padding:9px 14px;border-radius:999px;background:#f0c766;color:#19342b;font-weight:900;text-transform:uppercase;letter-spacing:.08em;font-size:.75rem}
+.latest-copy{display:flex;flex-direction:column;justify-content:center;padding:clamp(42px,7vw,94px)}
+.latest-copy h2{font:700 clamp(2.8rem,5vw,5rem)/1.03 "Fraunces",Georgia,serif;margin:.2em 0 .35em}.latest-copy>p:not(.eyebrow){font-size:1.12rem;line-height:1.72;color:#deebe5}
+.latest-details{display:grid;gap:0;margin:26px 0 32px;border-top:1px solid rgba(255,255,255,.18)}
+.latest-details span{display:flex;justify-content:space-between;gap:22px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.18);color:#e8f0ec}.latest-details strong{color:#f2cf7e}
+.v4-trip-grid{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:20px}
+.v4-trip-card{overflow:hidden;border-radius:24px;background:white;border:1px solid var(--line);box-shadow:0 16px 38px rgba(28,46,38,.09)}
+.v4-trip-card img{width:100%;height:250px;object-fit:cover}.v4-trip-card>div{padding:25px}.v4-trip-card h3{font:700 2rem/1.1 "Fraunces",Georgia,serif;margin:.28em 0}.v4-trip-card p{color:var(--muted);line-height:1.6}.trip-tag{font-size:.75rem;font-weight:900;letter-spacing:.1em;text-transform:uppercase;color:#8d552b}.v4-trip-card a{font-weight:900;color:var(--forest)}
+.feature-trip{grid-row:span 1}.feature-trip img{height:320px}.coming-trip{background:#f3ead8}
+.tater-system{display:grid;grid-template-columns:minmax(0,.85fr) minmax(420px,1.15fr);gap:clamp(40px,7vw,100px);align-items:center;background:#efe5cf;max-width:none;padding-left:max(24px,calc((100vw - 1240px)/2));padding-right:max(24px,calc((100vw - 1240px)/2))}
+.rating-intro h2{font:700 clamp(2.7rem,5vw,4.8rem)/1.04 "Fraunces",Georgia,serif;margin:.2em 0 .35em}.rating-intro>p:not(.eyebrow){line-height:1.72;font-size:1.08rem}
+.rating-scale{display:grid;gap:10px}.rating-scale div{display:grid;grid-template-columns:190px 1fr;gap:18px;align-items:center;padding:17px 20px;border-radius:15px;background:rgba(255,255,255,.74);border:1px solid rgba(103,72,35,.14)}.rating-scale strong{font-size:1.24rem;letter-spacing:.05em}.rating-scale span{color:#4f554f}
+.story-lane-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.story-lane-grid a{display:flex;gap:20px;align-items:flex-start;padding:27px;border-radius:20px;background:white;border:1px solid var(--line);text-decoration:none;color:inherit;transition:transform .2s ease,box-shadow .2s ease}.story-lane-grid a:hover{transform:translateY(-3px);box-shadow:0 16px 35px rgba(28,46,38,.1)}.story-lane-grid>a>span{font-size:2.2rem}.story-lane-grid h3{font:700 1.45rem "Fraunces",Georgia,serif;margin:0 0 6px}.story-lane-grid p{margin:0;color:var(--muted);line-height:1.55}
+.v4-rig{border-radius:0}.v4-crew{padding-top:100px}.v4-qr{background:#efe5cf}.v4-footer{display:flex;justify-content:space-between;gap:25px;align-items:center;padding:32px clamp(24px,6vw,90px);background:#10281f;color:white}.v4-footer>div{display:flex;flex-direction:column;gap:5px}.v4-footer>div:last-child{text-align:right}
+.rating-page-hero{min-height:68vh;display:flex;flex-direction:column;justify-content:end;padding:150px clamp(24px,8vw,130px) 80px;color:white;background:radial-gradient(circle at 78% 25%,rgba(244,200,101,.26),transparent 23%),linear-gradient(145deg,#10281f,#285245)}
+.rating-page-hero h1{font:700 clamp(4rem,10vw,8rem)/.9 "Fraunces",Georgia,serif;margin:.15em 0 .25em}.rating-page-hero>p:last-child{font-size:1.25rem;max-width:700px;color:#dfebe5}
+.rating-page-grid{display:grid;gap:14px}.rating-page-grid article{display:grid;grid-template-columns:220px 1fr 1.3fr;gap:25px;align-items:center;padding:25px;border-radius:20px;background:white;border:1px solid var(--line)}.rating-page-grid strong{font-size:1.4rem}.rating-page-grid h2{font:700 1.55rem "Fraunces",Georgia,serif;margin:0}.rating-page-grid p{margin:0;color:var(--muted);line-height:1.6}
+.scorecard-criteria{margin-top:80px;padding:45px;border-radius:28px;background:#18372d;color:white}.scorecard-criteria h2{font:700 clamp(2.4rem,5vw,4rem) "Fraunces",Georgia,serif}.scorecard-criteria>div{display:grid;grid-template-columns:50px 1fr;gap:17px;padding:17px 0;border-top:1px solid rgba(255,255,255,.16)}.scorecard-criteria>div>span{font-size:1.8rem}.scorecard-criteria p{margin:0;color:#dfe9e4;line-height:1.55}.scorecard-criteria strong{color:#f2cf7e}
+@media(max-width:980px){
+  .v4-campfire,.latest-adventure,.tater-system{grid-template-columns:1fr}
+  .latest-adventure{min-height:auto}.latest-image{min-height:480px}.v4-trip-grid{grid-template-columns:1fr 1fr}.feature-trip{grid-column:1/-1}
+  .rating-scale{max-width:760px}.rating-page-grid article{grid-template-columns:190px 1fr}.rating-page-grid p{grid-column:2}
+}
+@media(max-width:700px){
+  .v4-hero{min-height:88vh}.v4-hero-content{padding:125px 22px 78px}.hero-scroll{display:none}.hero-badges{display:none}
+  .v4-campfire{padding-top:75px;padding-bottom:75px}.campfire-note{transform:none}
+  .latest-image{min-height:340px}.latest-copy{padding:45px 24px}.latest-details span{flex-direction:column;gap:3px}
+  .v4-trip-grid,.story-lane-grid{grid-template-columns:1fr}.feature-trip{grid-column:auto}.v4-trip-card img,.feature-trip img{height:245px}
+  .tater-system{padding-top:75px;padding-bottom:75px}.rating-scale div{grid-template-columns:1fr;gap:6px}.rating-scale strong{font-size:1.08rem}
+  .v4-footer{flex-direction:column;align-items:flex-start}.v4-footer>div:last-child{text-align:left}
+  .rating-page-grid article{grid-template-columns:1fr;gap:9px}.rating-page-grid p{grid-column:auto}.scorecard-criteria{padding:28px 22px}
+}
+
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4.1 — Mobile polish
+   ========================================================= */
+.v4-header{
+  min-height:78px;
+}
+.v4-header .brand{
+  min-width:0;
+  gap:12px;
+}
+.v4-header .brand-mark{
+  flex:0 0 auto;
+  line-height:1;
+}
+.v4-header .brand-copy{
+  display:grid !important;
+  grid-template-columns:minmax(0,1fr);
+  gap:4px;
+  min-width:0;
+  line-height:1;
+}
+.v4-header .brand-name,
+.v4-header .brand-tagline{
+  display:block !important;
+  margin:0;
+  padding:0;
+  white-space:normal;
+}
+.v4-header .brand-name{
+  font-size:1.2rem;
+  line-height:1.05;
+  letter-spacing:-.015em;
+}
+.v4-header .brand-tagline{
+  font-size:.68rem;
+  line-height:1.25;
+  letter-spacing:.075em;
+  text-transform:uppercase;
+  opacity:.74;
+}
+.v4-header .menu-toggle{
+  flex:0 0 auto;
+  min-width:78px;
+  min-height:48px;
+  border-radius:15px;
+  font-weight:700;
+}
+.v4-footer .footer-identity,
+.v4-footer .footer-contact{
+  display:grid;
+  gap:7px;
+}
+.v4-footer .footer-identity strong{
+  display:block;
+  font-size:1.08rem;
+}
+.v4-footer .footer-identity span{
+  display:block;
+  line-height:1.55;
+}
+.v4-footer .footer-contact{
+  justify-items:end;
+}
+.v4-footer .footer-email{
+  display:block;
+  overflow-wrap:anywhere;
+  color:#f2cf7e;
+  font-weight:800;
+  text-decoration:none;
+}
+.v4-footer .footer-contact>span{
+  display:block;
+}
+@media(max-width:900px){
+  .v4-header{
+    padding:13px 18px;
+  }
+  .v4-header .site-nav{
+    top:calc(100% + 8px);
+    right:12px;
+    left:12px;
+    gap:4px;
+    padding:12px;
+    border:1px solid rgba(255,255,255,.12);
+  }
+  .v4-header .site-nav a{
+    padding:13px 14px;
+    border-radius:11px;
+  }
+  .v4-header .site-nav a:hover,
+  .v4-header .site-nav a:focus-visible{
+    background:rgba(255,255,255,.08);
+  }
+}
+@media(max-width:700px){
+  html{scroll-padding-top:88px}
+  .v4-header{
+    min-height:88px;
+  }
+  .v4-header .brand{
+    gap:10px;
+    max-width:calc(100% - 92px);
+  }
+  .v4-header .brand-mark{
+    font-size:1.55rem;
+  }
+  .v4-header .brand-name{
+    font-size:1.08rem;
+  }
+  .v4-header .brand-tagline{
+    font-size:.61rem;
+    letter-spacing:.055em;
+  }
+  .v4-header .menu-toggle{
+    min-width:74px;
+    min-height:50px;
+    padding:8px 10px;
+  }
+  .v4-footer{
+    gap:22px;
+    padding:30px 24px;
+  }
+  .v4-footer .footer-contact{
+    justify-items:start;
+  }
+  .rating-page-hero{
+    padding-top:145px;
+  }
+}
+@media(max-width:390px){
+  .v4-header{
+    padding-inline:12px;
+  }
+  .v4-header .brand-mark{
+    display:none;
+  }
+  .v4-header .brand{
+    max-width:calc(100% - 84px);
+  }
+  .v4-header .brand-name{
+    font-size:1.02rem;
+  }
+}
+
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4.2 — Gettysburg Premium
+   ========================================================= */
+.gettysburg-premium{
+  background:#fbfaf6;
+}
+.gettysburg-premium .trip-hero{
+  min-height:92vh;
+  display:grid;
+  align-items:end;
+  position:relative;
+  overflow:hidden;
+}
+.gettysburg-premium .trip-hero>img{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+}
+.gettysburg-premium .hero-shade{
+  background:
+    linear-gradient(90deg,rgba(8,22,17,.9),rgba(10,26,20,.52) 58%,rgba(8,20,16,.18)),
+    linear-gradient(0deg,rgba(7,19,14,.82),transparent 58%);
+}
+.gettysburg-premium .trip-hero-content{
+  position:relative;
+  z-index:2;
+  max-width:920px;
+  padding:155px clamp(24px,7vw,110px) 82px;
+}
+.gettysburg-premium .trip-hero h1{
+  max-width:900px;
+  font-size:clamp(3.6rem,8vw,7.5rem);
+  line-height:.94;
+  letter-spacing:-.045em;
+}
+.gettysburg-premium .trip-hero-content>p:last-of-type{
+  max-width:720px;
+  font-size:clamp(1.1rem,2vw,1.34rem);
+  line-height:1.65;
+}
+.gettysburg-premium .hero-scroll{
+  position:absolute;
+  z-index:3;
+  right:clamp(24px,5vw,72px);
+  bottom:34px;
+}
+.journal-nav{
+  position:sticky;
+  top:78px;
+  z-index:20;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:12px max(18px,calc((100vw - 1180px)/2));
+  background:rgba(251,250,246,.96);
+  border-bottom:1px solid var(--line);
+  box-shadow:0 8px 22px rgba(30,45,38,.06);
+  scrollbar-width:none;
+}
+.journal-nav::-webkit-scrollbar{display:none}
+.journal-nav a{
+  flex:0 0 auto;
+  padding:9px 13px;
+  border-radius:999px;
+  color:var(--forest);
+  background:#eee5d5;
+  font-size:.82rem;
+  font-weight:800;
+  text-decoration:none;
+}
+.journal-nav a:hover,
+.journal-nav a:focus-visible{
+  background:var(--forest);
+  color:white;
+}
+.premium-journal{
+  max-width:1040px;
+}
+.premium-journal .trip-meta{
+  margin-top:-60px;
+  position:relative;
+  z-index:4;
+  border-radius:22px;
+  box-shadow:0 22px 55px rgba(27,43,36,.15);
+}
+.premium-journal .lede{
+  max-width:850px;
+  margin:75px auto;
+  font:700 clamp(1.7rem,3.2vw,2.7rem)/1.35 "Fraunces",Georgia,serif;
+  text-align:center;
+  color:var(--forest);
+}
+.premium-journal>h2{
+  scroll-margin-top:155px;
+  margin-top:95px;
+  font-size:clamp(2.35rem,4.8vw,4.25rem);
+  line-height:1.05;
+  letter-spacing:-.025em;
+}
+.premium-journal>h2:after{
+  content:"";
+  display:block;
+  width:72px;
+  height:5px;
+  margin-top:18px;
+  border-radius:9px;
+  background:#cf8d44;
+}
+.premium-journal>p{
+  max-width:800px;
+  font-size:1.08rem;
+  line-height:1.82;
+}
+.premium-journal .panorama-feature{
+  margin:70px calc(50% - 50vw);
+}
+.premium-journal .panorama-feature img{
+  max-height:680px;
+  object-fit:cover;
+}
+.premium-journal .story-photo,
+.premium-journal .panorama-feature{
+  overflow:hidden;
+  border-radius:22px;
+  box-shadow:0 18px 42px rgba(28,45,38,.11);
+}
+.premium-journal .story-photo img,
+.premium-journal .panorama-feature img{
+  transition:transform .45s ease;
+}
+.premium-journal .story-photo:hover img,
+.premium-journal .panorama-feature:hover img{
+  transform:scale(1.018);
+}
+.premium-journal blockquote{
+  margin:60px auto;
+  max-width:830px;
+  padding:45px 48px;
+  border-left:0;
+  border-radius:24px;
+  background:#18372d;
+  color:white;
+  font:700 clamp(1.45rem,2.9vw,2.35rem)/1.45 "Fraunces",Georgia,serif;
+  box-shadow:0 22px 48px rgba(24,55,45,.18);
+}
+.premium-score-section{
+  scroll-margin-top:150px;
+  margin:100px 0 70px;
+  padding:clamp(28px,5vw,54px);
+  border-radius:30px;
+  background:#efe5cf;
+}
+.score-heading{
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  align-items:end;
+  margin-bottom:25px;
+}
+.score-heading h2{
+  margin:.2em 0 0;
+  font:700 clamp(2.2rem,4vw,3.6rem)/1.05 "Fraunces",Georgia,serif;
+}
+.premium-scorecard{
+  margin:0;
+  background:white;
+  box-shadow:0 16px 38px rgba(48,43,31,.1);
+}
+.premium-scorecard .scorecard-rating strong{
+  font-size:clamp(1.5rem,4vw,2.45rem);
+  letter-spacing:.08em;
+}
+.premium-scorecard .scorecard-rating em{
+  max-width:360px;
+  line-height:1.45;
+}
+.gettysburg-premium .gettysburg-gallery figure{
+  border-radius:18px;
+  overflow:hidden;
+  background:white;
+  box-shadow:0 12px 28px rgba(25,43,34,.1);
+}
+.gettysburg-premium .gettysburg-gallery img{
+  transition:transform .35s ease;
+}
+.gettysburg-premium .gettysburg-gallery figure:hover img{
+  transform:scale(1.035);
+}
+.gettysburg-premium .next-trip{
+  text-align:center;
+  padding-top:100px;
+  padding-bottom:110px;
+}
+@media(max-width:900px){
+  .journal-nav{top:88px}
+  .premium-journal .trip-meta{margin-top:-35px}
+  .score-heading{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:700px){
+  .gettysburg-premium .trip-hero{min-height:85vh}
+  .gettysburg-premium .trip-hero-content{padding:135px 22px 70px}
+  .gettysburg-premium .trip-hero h1{font-size:clamp(3rem,15vw,5rem)}
+  .gettysburg-premium .hero-scroll{display:none}
+  .journal-nav{top:88px;padding-inline:12px}
+  .premium-journal .trip-meta{
+    margin-top:-22px;
+    border-radius:18px;
+  }
+  .premium-journal .lede{
+    margin:55px auto;
+    text-align:left;
+  }
+  .premium-journal>h2{margin-top:72px;scroll-margin-top:150px}
+  .premium-journal .panorama-feature{
+    margin:50px -24px;
+    border-radius:0;
+  }
+  .premium-journal blockquote{
+    padding:30px 25px;
+    margin:45px 0;
+  }
+  .premium-score-section{
+    margin-inline:-8px;
+    padding:28px 20px;
+    border-radius:22px;
+  }
+}
+
+/* Trail Tater 4.0 Alpha 4.3 — Plymouth Journal */
+.plymouth-journal{background:#fbfaf6}.plymouth-hero{position:relative;min-height:91vh;display:grid;align-items:end;overflow:hidden;color:#fff;background:linear-gradient(#77a7b7 0 58%,#3f7680 58% 70%,#b99a66 70%)}.plymouth-hero-art{position:absolute;inset:0}.plymouth-hero-art .sun{position:absolute;width:160px;height:160px;border-radius:50%;right:12%;top:14%;background:#f4d286}.plymouth-hero-art .ship{position:absolute;right:24%;bottom:27%;font-size:clamp(5rem,13vw,10rem)}.plymouth-hero-art .shore{position:absolute;left:-6%;right:-6%;bottom:-10%;height:34%;background:#9b7b49;clip-path:polygon(0 30%,25% 36%,43% 21%,64% 35%,82% 22%,100% 34%,100% 100%,0 100%)}.plymouth-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(9,28,28,.88),rgba(10,37,37,.5) 58%,transparent),linear-gradient(0deg,rgba(7,24,21,.75),transparent 55%)}.plymouth-hero-content{position:relative;z-index:2;max-width:980px;padding:155px clamp(24px,7vw,110px) 82px}.plymouth-hero h1{font:700 clamp(3.4rem,8vw,7.2rem)/.95 "Fraunces",Georgia,serif;letter-spacing:-.045em;margin:.15em 0 .25em}.plymouth-hero-content>p:not(.eyebrow){max-width:740px;font-size:clamp(1.1rem,2vw,1.35rem);line-height:1.65}.trip-status{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:28px}.status-dot{width:10px;height:10px;border-radius:50%;background:#f0c766;box-shadow:0 0 0 6px rgba(240,199,102,.18)}.plymouth-intro{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(40px,7vw,95px);align-items:center;padding-top:100px;padding-bottom:100px}.plymouth-intro h2,.sandy-pond h2{font:700 clamp(2.7rem,5vw,5rem)/1.03 "Fraunces",Georgia,serif}.trip-board{padding:30px;border-radius:26px;background:#18372d;color:#fff}.trip-board h3{font:700 2rem "Fraunces",Georgia,serif;color:#f2cf7e}.trip-board dl>div{display:grid;grid-template-columns:120px 1fr;gap:20px;padding:13px 0;border-top:1px solid rgba(255,255,255,.16)}.trip-board dd{margin:0}.ready-pill{padding:5px 9px;border-radius:999px;background:#f0c766;color:#18372d;font-size:.78rem;font-weight:900}.day-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.day-card{position:relative;min-height:290px;padding:25px;border-radius:22px;background:#fff;border:1px solid var(--line)}.day-card:before{content:"";position:absolute;inset:0 0 auto;height:5px;background:#cf8d44;border-radius:22px 22px 0 0}.day-card h3{font:700 1.55rem "Fraunces",Georgia,serif}.day-number,.day-date,.entry-status{font-size:.75rem;font-weight:800}.entry-status{position:absolute;bottom:20px;left:25px;color:#81796e}.birthday-day{background:#fff6db}.travel-day{background:#edf3ef}.ancestor-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.ancestor-grid article{display:flex;gap:18px;padding:26px;border-radius:22px;background:#fff;border:1px solid var(--line)}.ancestor-mark{flex:0 0 54px;width:54px;height:54px;display:grid;place-items:center;border-radius:50%;background:#18372d;color:#f2cf7e;font-weight:900}.ancestor-section blockquote{margin:55px auto 0;padding:38px;border:0;border-radius:24px;background:#18372d;color:#fff;text-align:center;font:700 clamp(1.5rem,3vw,2.4rem)/1.45 "Fraunces",Georgia,serif}.campground-preview{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}.campground-illustration{min-height:420px;display:flex;align-items:center;justify-content:center;gap:18px;position:relative;border-radius:28px;background:linear-gradient(#9ec0b5 0 56%,#6f8d62 56%)}.campground-illustration span{font-size:clamp(3rem,7vw,6rem)}.campground-illustration p{position:absolute;bottom:18px;padding:10px 14px;border-radius:12px;background:rgba(22,56,45,.86);color:#fff}.campground-facts{display:grid;grid-template-columns:1fr 1fr;gap:10px}.campground-facts span{padding:14px;border-radius:13px;background:#efe5cf}.campground-facts strong{display:block;font-size:.75rem}.place-grid,.placeholder-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.place-grid article{padding:25px;border-radius:20px;background:#fff;border:1px solid var(--line)}.place-grid article>span{font-size:2rem}.plymouth-score{background:#efe5cf;max-width:none;padding-left:max(24px,calc((100vw - 1240px)/2));padding-right:max(24px,calc((100vw - 1240px)/2))}.pending-scorecard{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.pending-scorecard>div{display:grid;grid-template-columns:44px 1fr;gap:4px 12px;padding:19px;border-radius:17px;background:#fff}.pending-scorecard span{grid-row:1/3;font-size:1.75rem}.final-pending{background:#18372d!important;color:#fff}.placeholder-gallery>div{min-height:220px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px;border:2px dashed #b8ab94;border-radius:20px;background:#f3eee3;text-align:center}.placeholder-gallery span{font-size:3rem}@media(max-width:1000px){.day-grid{grid-template-columns:repeat(2,1fr)}.ancestor-grid{grid-template-columns:1fr}.place-grid{grid-template-columns:repeat(2,1fr)}}@media(max-width:800px){.plymouth-intro,.campground-preview{grid-template-columns:1fr}.pending-scorecard{grid-template-columns:1fr 1fr}}@media(max-width:700px){.plymouth-hero{min-height:86vh}.plymouth-hero-content{padding:135px 22px 68px}.day-grid,.place-grid,.pending-scorecard,.placeholder-gallery{grid-template-columns:1fr}.trip-board dl>div{grid-template-columns:1fr}.campground-facts{grid-template-columns:1fr}}
+
+/* =========================================================
+   Trail Tater 4.0 Alpha 4.4 — Lost River Valley
+   ========================================================= */
+.lost-river-page{background:#fbfaf6}
+.lost-river-hero{position:relative;min-height:91vh;display:grid;align-items:end;overflow:hidden;color:white;background:#142f27}
+.lost-river-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.lost-river-hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(7,21,17,.94),rgba(8,28,22,.58) 58%,rgba(8,24,20,.18)),linear-gradient(0deg,rgba(7,20,16,.8),transparent 56%)}
+.lost-river-hero-content{position:relative;z-index:2;max-width:980px;padding:155px clamp(24px,7vw,110px) 82px}
+.lost-river-hero h1{font:700 clamp(3.5rem,8vw,7.3rem)/.95 "Fraunces",Georgia,serif;letter-spacing:-.045em;margin:.15em 0 .25em}
+.lost-river-hero-content>p:not(.eyebrow){max-width:760px;font-size:clamp(1.1rem,2vw,1.36rem);line-height:1.65}
+.lost-river-story{max-width:1060px;padding-top:75px}
+.lost-river-meta{margin-top:-105px;position:relative;z-index:3;border-radius:22px;box-shadow:0 22px 55px rgba(23,43,35,.16)}
+.lost-river-story .lede{max-width:900px;margin:78px auto;text-align:center;font:700 clamp(1.7rem,3.3vw,2.8rem)/1.38 "Fraunces",Georgia,serif;color:var(--forest)}
+.lost-river-story>h2{scroll-margin-top:155px;margin-top:95px;font:700 clamp(2.45rem,5vw,4.45rem)/1.04 "Fraunces",Georgia,serif;letter-spacing:-.03em}
+.lost-river-story>h2:after{content:"";display:block;width:72px;height:5px;margin-top:18px;border-radius:9px;background:#62805b}
+.lost-river-story>p{max-width:820px;font-size:1.08rem;line-height:1.82}
+.lost-river-story figure{margin:0}
+.lost-river-story figcaption{padding:11px 14px;color:#625f57;font-size:.84rem;line-height:1.45;background:#f0eadf}
+.story-photo.wide{margin:42px 0 70px;border-radius:24px;overflow:hidden;box-shadow:0 18px 42px rgba(25,44,35,.12)}
+.story-photo.wide img{width:100%;max-height:670px;object-fit:cover}
+.site-17-feature{display:grid;grid-template-columns:1.15fr .85fr;gap:0;margin:42px 0 34px;border-radius:26px;overflow:hidden;background:#18372d;color:white;box-shadow:0 22px 50px rgba(24,55,45,.18)}
+.site-17-feature figure img{width:100%;height:100%;min-height:460px;object-fit:cover}
+.site-17-feature>div{padding:clamp(30px,5vw,52px);display:flex;flex-direction:column;justify-content:center}
+.site-17-feature h3{font:700 clamp(2.2rem,4vw,3.6rem)/1.05 "Fraunces",Georgia,serif;margin:.15em 0 .45em}
+.site-17-feature ul{display:grid;gap:11px;padding-left:1.15rem;line-height:1.55;color:#dfe9e4}
+.map-feature{margin:34px 0 75px;border-radius:24px;overflow:hidden;background:white;box-shadow:0 15px 38px rgba(28,45,37,.11)}
+.map-feature img{width:100%;display:block}
+.river-gallery{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:42px 0}
+.river-gallery figure,.family-photo-grid figure,.clarks-grid figure,.portrait-feature{overflow:hidden;border-radius:22px;background:white;box-shadow:0 15px 35px rgba(25,44,35,.1)}
+.river-gallery img{width:100%;height:610px;object-fit:cover}
+.portrait-feature{max-width:620px;margin:28px auto 75px}.portrait-feature img{width:100%;max-height:700px;object-fit:cover}
+.family-photo-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin:42px 0 70px}
+.family-photo-grid img{width:100%;height:430px;object-fit:cover}.family-photo-grid .span-two{grid-column:1/-1}.family-photo-grid .span-two img{height:560px}
+.lost-river-story blockquote{margin:70px auto;padding:44px 48px;border:0;border-radius:26px;background:#18372d;color:white;text-align:center;font:700 clamp(1.5rem,3vw,2.45rem)/1.45 "Fraunces",Georgia,serif;box-shadow:0 22px 48px rgba(24,55,45,.18)}
+.clarks-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:42px 0 70px}.clarks-grid img{width:100%;height:330px;object-fit:cover}
+.lost-river-review{scroll-margin-top:145px;margin:100px 0 85px;padding:clamp(28px,5vw,54px);border-radius:30px;background:#efe5cf}
+.return-proof{display:flex;align-items:center;gap:24px;margin:28px 0;padding:25px;border-radius:20px;background:#18372d;color:white}
+.return-number{font:700 clamp(4rem,8vw,6.5rem)/.8 "Fraunces",Georgia,serif;color:#f2cf7e}.return-proof strong{font:700 1.6rem "Fraunces",Georgia,serif}.return-proof p{margin:5px 0 0;color:#dce8e2}
+.lost-score-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.lost-score-grid>div{display:grid;grid-template-columns:44px 1fr;gap:4px 12px;padding:20px;border-radius:17px;background:white}.lost-score-grid span{grid-row:1/3;font-size:1.8rem}.lost-score-grid strong{font-size:.96rem}.lost-score-grid em{font-size:.8rem;line-height:1.45;color:var(--muted)}.lost-score-grid .final-rating{background:#18372d;color:white}.lost-score-grid .final-rating em{color:#dce8e2}
+.tater-verdict{display:flex;justify-content:space-between;gap:25px;align-items:center;margin-top:20px;padding:25px;border-radius:18px;background:white}.tater-verdict>span{font-size:clamp(1.5rem,4vw,2.4rem);letter-spacing:.08em}.tater-verdict p{margin:0;font-size:1.05rem}
+.lost-river-gallery{padding-top:35px}.masonry-gallery{columns:3 280px;column-gap:16px}.masonry-gallery figure{break-inside:avoid;margin-bottom:16px;border-radius:18px;overflow:hidden;box-shadow:0 12px 28px rgba(25,43,34,.1)}.masonry-gallery img{width:100%;display:block}
+@media(max-width:950px){
+  .site-17-feature{grid-template-columns:1fr}.site-17-feature figure img{min-height:380px}
+  .clarks-grid{grid-template-columns:1fr 1fr}.lost-score-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:700px){
+  .lost-river-hero{min-height:86vh}.lost-river-hero-content{padding:135px 22px 68px}.lost-river-hero h1{font-size:clamp(3rem,14vw,5rem)}
+  .lost-river-meta{margin-top:-35px}.lost-river-story .lede{text-align:left;margin:55px auto}
+  .river-gallery,.family-photo-grid,.clarks-grid,.lost-score-grid{grid-template-columns:1fr}
+  .river-gallery img{height:500px}.family-photo-grid .span-two{grid-column:auto}.family-photo-grid img,.family-photo-grid .span-two img{height:auto}
+  .clarks-grid img{height:auto}.lost-river-story blockquote{padding:30px 24px}
+  .lost-river-review{margin-inline:-8px;padding:28px 20px}.tater-verdict{align-items:flex-start;flex-direction:column}
+}
+
+
+/* Alpha 4.5 — Lake Compounce origin story */
+.lake-compounce-hero img{object-position:center 42%}
+.compounce-site-feature{align-items:stretch}
+.compounce-site-feature .campfire-note{margin:0}
+.compounce-dogs{max-width:760px;margin-inline:auto}
+.compounce-dogs img{width:100%;max-height:900px;object-fit:cover;object-position:center}
+.compounce-firsts{margin-top:4rem}
+@media (max-width:760px){.lake-compounce-hero img{object-position:center}.compounce-dogs img{max-height:none}}
