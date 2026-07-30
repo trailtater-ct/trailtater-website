@@ -1,24 +1,10 @@
-TRAIL TATER 4.0 — ALPHA 4.5.1 MAP LINK FIX
+UPLOAD ONLY:
+- plymouth-2026.html
+- plymouth-day1-campsite-overview.jpg
+- plymouth-day1-starlink.jpg
 
-This is a small update package for the current Trail Tater website.
+DO NOT upload this instruction file.
+This package contains NO index.html, so it cannot replace the homepage.
 
-UPLOAD THIS FILE TO THE ROOT OF THE GITHUB REPOSITORY:
-
-  script.js
-
-When GitHub asks whether to replace the existing file, choose REPLACE/OVERWRITE.
-Cloudflare Pages should redeploy automatically after the commit.
-
-WHAT THIS FIXES
-- Lost River Valley map pin now links to lost-river-valley.html
-- Burlingame / Charlestown map pin now links to charlestown-ri.html
-- Lake Compounce and Gettysburg links remain unchanged
-- Plymouth remains without a story link until its first trip update is published
-
-QUICK TEST AFTER DEPLOYMENT
-1. Open TrailTater.com and scroll to the travel map.
-2. Tap Lost River Valley, then tap “Read the full story.”
-3. Return to the map and repeat for Burlingame State Park.
-4. Confirm Gettysburg and Lake Compounce still open correctly.
-
-Prepared July 28, 2026.
+Upload the three files to the root of the GitHub repository and commit.
+Page address: https://trailtater.com/plymouth-2026.html
