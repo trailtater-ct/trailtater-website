@@ -1,5 +1,11 @@
-TRAIL TATER — PLYMOUTH DAY 2 COMPLETE UPDATE
+TRAIL TATER DAY FIVE BIRTHDAY UPDATE
 
-Upload every file in this ZIP to the same root folder used by the existing Trail Tater website. Replace plymouth-2026.html when prompted. Keep all existing website files in place.
+Upload all four website files to the same root folder used by TrailTater.com:
 
-This package includes the complete Day 2 story, Crew list, rock painting, hidden rocks, Billie's dinner spotlight, campfire sequence, rainbow flames, red-eye vote, weather section, and the final nighttime closer.
+1. index.html
+2. plymouth-2026.html
+3. plymouth-day5-birthday-setup.jpg
+4. plymouth-day5-silly-string.jpg
+
+Replace index.html and plymouth-2026.html when prompted.
+The two JPG files are new and must be uploaded with the HTML files.
