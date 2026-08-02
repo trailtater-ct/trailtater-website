@@ -1,20 +1,19 @@
-TRAIL TATER VERSION 3.2 — BURLINGAME / CHARLESTOWN UPDATE
+Trail Tater — Day 5 Afternoon / Burial Hill Update
 
-WHAT IS NEW
-- Added a complete Charlestown, Rhode Island trip page: charlestown-ri.html
-- Added the Burlingame State Park story and Trail Tater Take
-- Added all 10 supplied trip photos in images/charlestown/
-- Added a Charlestown photo gallery to the home page
-- Updated the 2024 adventure card to link to the new page
-- Added mobile-friendly gallery and trip-page styling
+Upload every file in this folder to the root of the TrailTater.com site.
 
-HOW TO UPLOAD TO GITHUB
-1. Open the GitHub repository connected to Cloudflare Pages.
-2. Upload ALL files and folders from this package, preserving the folder structure.
-3. Replace index.html, styles.css, script.js, and README-UPLOAD.txt when asked.
-4. Add charlestown-ri.html and the complete images/charlestown folder.
-5. Commit the changes.
-6. Cloudflare Pages should automatically deploy the new version after the commit.
+Updated files:
+- index.html
+- plymouth-2026.html
 
-IMPORTANT
-The images/charlestown folder must be uploaded as a folder. The Charlestown page and gallery will not show photographs if those image files are omitted or moved.
+New page:
+- burial-hill.html
+
+New photographs:
+- all .jpg files included in this package, including the Day Five birthday photographs
+
+What changed:
+- Added the Day Five afternoon Burial Hill journal update.
+- Added a full Burial Hill Cemetery photo-story page.
+- Added a direct Burial Hill link from the Plymouth card on the home page.
+- Changed the home-page Plymouth status to “Day 5 afternoon update live.”
