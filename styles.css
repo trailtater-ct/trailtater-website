@@ -561,3 +561,27 @@
 .compounce-dogs img{width:100%;max-height:900px;object-fit:cover;object-position:center}
 .compounce-firsts{margin-top:4rem}
 @media (max-width:760px){.lake-compounce-hero img{object-position:center}.compounce-dogs img{max-height:none}}
+
+
+/* Trail Tater site polish — reviews, dispatches and utility pages */
+.latest-details a{color:inherit;font-weight:800;text-decoration-thickness:2px;text-underline-offset:3px}
+.dispatch-hero,.review-hero,.error-hero{min-height:62vh;display:grid;align-content:end;padding:140px clamp(24px,8vw,120px) 72px;color:#fff;background:linear-gradient(135deg,rgba(8,38,29,.95),rgba(29,83,65,.78)),url('campfire-night.jpg') center/cover}
+.review-hero{background:linear-gradient(135deg,rgba(8,38,29,.94),rgba(45,78,54,.66)),url('plymouth-day1-campsite-overview.jpg') center/cover}
+.error-hero{min-height:100vh;align-content:center;background:radial-gradient(circle at 70% 25%,rgba(221,177,84,.22),transparent 26%),linear-gradient(145deg,#09291f,#1d5945)}
+.dispatch-hero h1,.review-hero h1,.error-hero h1{font:700 clamp(3.2rem,8vw,7rem)/.94 "Fraunces",Georgia,serif;margin:.15em 0 .25em;max-width:950px}
+.dispatch-hero p,.review-hero p,.error-hero p{max-width:760px;font-size:1.15rem;line-height:1.7;color:#e9f0ec}
+.page-shell{max-width:1120px;margin:0 auto;padding:78px 22px 96px}
+.dispatch-grid,.review-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:22px}
+.dispatch-card,.review-card{background:#fffdf8;border:1px solid var(--line);border-radius:24px;padding:30px;box-shadow:0 12px 30px rgba(20,51,40,.08)}
+.dispatch-card h2,.review-card h2{font:700 2rem "Fraunces",Georgia,serif;margin:.2em 0 .45em;color:#16382d}
+.dispatch-card p,.review-card p{color:var(--muted);line-height:1.7}
+.dispatch-card.featured{grid-column:1/-1;background:linear-gradient(135deg,#fffdf8,#f2ead8)}
+.dispatch-number{display:inline-flex;padding:7px 11px;border-radius:999px;background:#18372d;color:#fff;font-weight:800;font-size:.78rem;letter-spacing:.08em;text-transform:uppercase}
+.review-score{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:22px 25px;border-radius:20px;background:#18372d;color:#fff;margin:26px 0}
+.review-score strong{font-size:1.25rem}.review-score span{font-size:1.7rem;letter-spacing:.06em}
+.review-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:24px 0}
+.review-facts div{padding:18px;border-radius:16px;background:#f3ecdc}.review-facts strong{display:block;color:#123b2e;margin-bottom:5px}
+.review-gallery{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:30px 0}.review-gallery figure{margin:0;border-radius:20px;overflow:hidden;background:#fff}.review-gallery img{width:100%;height:290px;object-fit:cover}.review-gallery figcaption{padding:12px 15px;color:var(--muted)}
+.utility-nav{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}.utility-nav a{display:inline-flex;padding:12px 17px;border-radius:999px;text-decoration:none;font-weight:800;background:#d7832f;color:#fff}.utility-nav a.secondary{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.35)}
+.site-note{padding:22px 24px;border-left:6px solid #d7832f;background:#f3ecdc;border-radius:12px;line-height:1.65}
+@media(max-width:760px){.dispatch-grid,.review-grid,.review-facts,.review-gallery{grid-template-columns:1fr}.dispatch-card.featured{grid-column:auto}.review-gallery img{height:auto}.review-score{align-items:flex-start;flex-direction:column}.dispatch-hero,.review-hero,.error-hero{padding-left:22px;padding-right:22px}}

@@ -30,7 +30,7 @@ const trips = [
   {id:'burlingame-2024', year:'2024', name:'Burlingame State Park Campground', place:'Charlestown, Rhode Island', lat:41.38, lng:-71.70, note:'Coastal camping beside Watchaug Pond.', url:'charlestown-ri.html'},
   {id:'lake-compounce-2025', year:'2025', name:'Lake Compounce Campground', place:'Bristol, Connecticut', lat:41.6416, lng:-72.9233, note:'Trail Tater’s first RV weekend, first campground decal and the first state filled on the map.', url:'lake-compounce-2025.html'},
   {id:'gettysburg-2025', year:'2025', name:'Artillery Ridge Campground', place:'Gettysburg, Pennsylvania', lat:39.81, lng:-77.22, note:'The tent-camping trip that inspired Trail Tater.', url:'gettysburg-2025.html'},
-  {id:'plymouth-2026', year:'2026', name:'Sandy Pond Campground', place:'Plymouth, Massachusetts', lat:41.82, lng:-70.58, note:'Trail Tater is camped at Sandy Pond for a live Plymouth family-history journey.', url:'plymouth-2026.html'}
+  {id:'plymouth-2026', year:'2026', name:'Sandy Pond Campground', place:'Plymouth, Massachusetts', lat:41.82, lng:-70.58, note:'A completed family-history pilgrimage based at Sandy Pond, now Trail Tater’s first Super Tater Park.', url:'plymouth-2026.html'}
 ];
 
 const list = document.getElementById('trip-list');
