@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>Trail Tater Campfire</title>
+    <link>https://trailtater.com/</link>
+    <description>Trail Tater campground trips, family adventures, camp cooking, history, and stories from along the way.</description>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Sep 2026 22:53:21 +0000</lastBuildDate>
+    <generator>TrailTater.com</generator>
+    <ttl>60</ttl>
+
+    <item>
+      <title>Back to Lost River Valley Campground in 2027</title>
+      <link>https://trailtater.com/lost-river-2027/</link>
+      <guid isPermaLink="true">https://trailtater.com/lost-river-2027/</guid>
+      <pubDate>Sun, 06 Sep 2026 18:52:00 +0000</pubDate>
+      <description><![CDATA[
+        Trail Tater is planning a return to Lost River Valley Campground in North Woodstock, New Hampshire, July 28 through August 3, 2027. The new update includes the working family-campout plan, preferred sites, camp cooking, Clark's Bears, and Billie and Kalley's presentation.
+      ]]></description>
+    </item>
+  </channel>
+</rss>
