@@ -1,270 +1,144 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#16382d">
-  <title>Trail Tater | Pull Up a Chair</title>
-  <meta name="description" content="Campground stories, family adventures, history, genealogy, cemetery discoveries, amateur radio, and honest Tater-rated campground reviews.">
-  <link rel="canonical" href="https://trailtater.com/">
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Trail Tater">
-  <meta property="og:title" content="Trail Tater | Pull Up a Chair">
-  <meta property="og:description" content="Campground stories, family adventures, history, genealogy, cemetery discoveries, amateur radio, and honest Tater-rated campground reviews.">
-  <meta property="og:url" content="https://trailtater.com/">
-  <meta property="og:image" content="https://trailtater.com/trail-tater-hero.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Trail Tater | Pull Up a Chair">
-  <meta name="twitter:description" content="Campground stories, family adventures, history, genealogy, cemetery discoveries, amateur radio, and honest Tater-rated campground reviews.">
-  <meta name="twitter:image" content="https://trailtater.com/trail-tater-hero.jpg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
-  <link rel="stylesheet" href="styles.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Trail Tater is returning to Lost River Valley Campground in North Woodstock, New Hampshire for a family campout in summer 2027.">
+<title>Back to Lost River | Trail Tater</title>
+<style>
+:root{
+  --forest:#183b2b; --forest2:#244c38; --cream:#f7f1e7; --paper:#fffdf8;
+  --orange:#d7832f; --brown:#7a4a20; --ink:#2e302c; --muted:#697069;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit}
+.topbar{background:var(--forest);color:white;padding:18px 20px;border-bottom:6px solid var(--orange)}
+.wrap{width:min(1100px,calc(100% - 32px));margin:auto}
+.brand{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand strong{font-family:Georgia,'Times New Roman',serif;font-size:1.35rem}
+.brand a{text-decoration:none;color:#f9d5a2;font-weight:bold}
+.hero{background:linear-gradient(135deg,var(--forest),var(--forest2));color:white;padding:74px 0 64px;position:relative;overflow:hidden}
+.hero:after{content:"🥔";position:absolute;right:4%;bottom:-60px;font-size:220px;opacity:.07;transform:rotate(-12deg)}
+.eyebrow{text-transform:uppercase;letter-spacing:.12em;font-weight:800;font-size:.8rem;color:#f3bc78;margin:0 0 8px}
+h1,h2,h3{font-family:Georgia,'Times New Roman',serif;line-height:1.15}
+h1{font-size:clamp(2.7rem,7vw,5.6rem);margin:.05em 0 .2em}
+.hero .lede{font-size:clamp(1.1rem,2vw,1.35rem);max-width:760px;color:#edf3ee}
+.date-chip{display:inline-flex;flex-wrap:wrap;gap:10px;align-items:center;margin-top:20px;padding:12px 16px;border:1px solid #ffffff55;border-radius:999px;background:#ffffff12;font-weight:800}
+main{padding:42px 0 70px}
+.notice{background:var(--paper);border-radius:20px;padding:28px;box-shadow:0 12px 34px #17352714;border-left:7px solid var(--orange);margin-bottom:34px}
+.notice h2{margin:0 0 10px;font-size:clamp(1.8rem,4vw,2.8rem);color:var(--forest)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:28px 0 42px}
+.card{background:var(--paper);border:1px solid #dfd7c8;border-radius:18px;padding:24px;box-shadow:0 8px 22px #1735270d}
+.card h3{color:var(--forest);font-size:1.45rem;margin:.25em 0 .45em}
+.icon{font-size:2rem}
+.section{margin:48px 0}
+.section h2{color:var(--forest);font-size:clamp(2rem,4vw,3rem);margin:.1em 0 .35em}
+.timeline{display:grid;gap:14px}
+.row{display:grid;grid-template-columns:140px 1fr;gap:18px;background:#fff9ef;border-radius:14px;padding:17px 20px;border:1px solid #eadfcd}
+.row b{color:var(--brown)}
+.callout{background:var(--forest);color:white;border-radius:22px;padding:30px;margin-top:42px}
+.callout h2{color:white;margin-top:0}
+.callout p{max-width:850px;color:#e8efe9}
+.button{display:inline-block;margin-top:10px;background:var(--orange);color:white;text-decoration:none;font-weight:800;padding:12px 18px;border-radius:10px}
+.small{color:var(--muted);font-size:.93rem}
+footer{background:#112c20;color:#dce8df;padding:26px 20px;text-align:center}
+@media(max-width:780px){.grid{grid-template-columns:1fr}.row{grid-template-columns:1fr;gap:3px}.brand{align-items:flex-start;flex-direction:column}.hero{padding-top:54px}}
+</style>
 </head>
-<body class="home-v4">
-  <header class="site-header v4-header">
-    <a class="brand" href="#top" aria-label="Trail Tater home">
-      <span class="brand-mark" aria-hidden="true">🥔</span>
-      <span class="brand-copy"><strong class="brand-name">Trail Tater</strong><small class="brand-tagline">Friends made along the way</small></span>
-    </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
-    <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="#campfire">Campfire</a>
-      <a href="campfire-dispatches.html">Dispatches</a>
-      <a href="#latest">Latest Adventure</a>
-      <a href="#genealogy">Genealogy</a>
-      <a href="#adventures">Trips</a>
-      <a href="#ratings">Tater Ratings</a>
-      <a href="#map">Map</a>
-      <a href="radio.html">Radio</a>
-      <a href="contact.html">Say Hello</a>
-    </nav>
-  </header>
+<body>
+<header class="topbar">
+  <div class="wrap brand">
+    <strong>🥔 Trail Tater</strong>
+    <a href="/">← Back to TrailTater.com</a>
+  </div>
+</header>
 
-  <main id="top">
-    <section class="v4-hero" aria-labelledby="home-title">
-      <img src="trail-tater-hero.jpg" alt="The Trail Tater Geo Pro camper at a wooded campsite">
-      <div class="v4-hero-overlay"></div>
-      <div class="v4-hero-content">
-        <p class="eyebrow">Campgrounds • history • family • friendship</p>
-        <h1 id="home-title">Pull up a chair.<br>The fire is going.</h1>
-        <p class="hero-lede">Trail Tater is our rolling campfire: a place for campground stories, family adventures, hidden history, old cemeteries, amateur radio and the friends we meet along the road.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="#latest">Start with Plymouth</a>
-          <a class="button ghost" href="#campfire">Come around the campfire</a>
-        </div>
-        <div class="hero-badges" aria-label="Trail Tater highlights">
-          <span>🥔 Real Tater ratings</span>
-          <span>📻 K1RHH on the road</span>
-          <span>🪦 History in unexpected places</span>
-        </div>
-      </div>
-      <a class="hero-scroll" href="#campfire" aria-label="Continue to Around the Campfire">↓</a>
-    </section>
+<section class="hero">
+  <div class="wrap">
+    <p class="eyebrow">Next family adventure · New Hampshire</p>
+    <h1>Back to Lost River.</h1>
+    <p class="lede">The campground that brought the family back three years in a row is calling again. Trail Tater is planning a return to Lost River Valley Campground in North Woodstock, New Hampshire for our 2027 family campout.</p>
+    <div class="date-chip">📅 July 28 – August 3, 2027 &nbsp; • &nbsp; 📍 North Woodstock, NH</div>
+  </div>
+</section>
 
-    <section id="campfire" class="section v4-campfire">
-      <div class="campfire-copy">
-        <p class="eyebrow">Around the Campfire</p>
-        <h2>Followers are fine.<br>We would rather make friends.</h2>
-        <p class="large-copy">This is not a polished travel brochure. It is the real story of the places we camp, the history we stumble into, the things that go sideways, and the people who make the trip worth remembering.</p>
-        <p>Some pages begin with a beautiful sunrise. Others begin with a missing tent pole. Either way, there is usually a story worth telling.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="https://31230ab2.sibforms.com/serve/MUIFAEKLxRzzJZ3ZEIRgNqxoickyABS8xcL-HBZaP1dwAqT2PgglxKjQtO2P21MNMeKj6r_jnApJO3VOcjG2c2Pinx-2ynk6eL1IK7A8IoQxVVbD-yPxBjunCzHYX2fxOjuMlOXMVPDxyC8YNcIjYA9bbNH1c6Bp64UMvsN5hQesuOnJksalv9sF56aygPnnUde9bxUHxEGBl1YnNA==" target="_blank" rel="noopener noreferrer">Join the Trail Tater Campfire</a>
-          <a class="button ghost" href="campfire-dispatches.html">Read Campfire Dispatches</a>
-          <a class="button ghost" href="contact.html">Pull up a chair and say hello</a>
-        </div>
-      </div>
-      <aside class="campfire-note">
-        <span class="note-icon">🔥</span>
-        <p>“The big difference between me and a content creator is they want followers. I want friends.”</p>
-        <strong>— The Trail Tater way</strong>
-      </aside>
-    </section>
+<main>
+<div class="wrap">
+  <section class="notice">
+    <p class="eyebrow">Return trip</p>
+    <h2>Lost River Valley Campground, round four.</h2>
+    <p>Lost River was our family campground for three consecutive summers from 2021 through 2023. In 2027, the plan is to bring Trail Tater back—with a bigger family crew, a riverside basecamp, plenty of camp cooking, and another week of White Mountain memories.</p>
+    <p class="small"><strong>Planning note:</strong> Dates, sites, and attendance are working plans until campground reservations and individual travel plans are finalized.</p>
+  </section>
 
-    <section id="latest" class="latest-adventure">
-      <div class="latest-image">
-        <img src="plymouth-home-resting.jpg" alt="Trail Tater resting at home after the completed Plymouth family pilgrimage">
-        <span class="latest-ribbon">Latest full adventure</span>
-      </div>
-      <div class="latest-copy">
-        <p class="eyebrow">Plymouth • 2026</p>
-        <h2>A family pilgrimage through Plymouth history.</h2>
-        <p>Sandy Pond became our basecamp for a week of Mayflower family history, Pilgrim Hall, Burial Hill, the Plymouth waterfront and the Jabez Howland House—along with campfires, birthday nonsense and a new member of the Trail Tater crew.</p>
-        <div class="latest-details">
-          <span><strong>Basecamp</strong> Sandy Pond Campground</span>
-          <span><strong>Best moment</strong> Following the Howland story together</span>
-          <span><strong>Campground verdict</strong> <a href="sandy-pond-review.html">Super Tater Park</a></span>
-        </div>
-        <div class="hero-actions"><a class="button primary" href="plymouth-2026.html">Read the complete Plymouth story</a><a class="button secondary" href="sandy-pond-review.html">Read the Sandy Pond review</a></div>
-      </div>
-    </section>
+  <div class="grid">
+    <article class="card">
+      <div class="icon">🏕️</div>
+      <p class="eyebrow">The basecamp</p>
+      <h3>Sites 17, 18 &amp; 27</h3>
+      <p>The preferred cluster puts the family together with a double tent site, a two-room cabin, and a nearby water/electric RV site for Trail Tater.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🌊</div>
+      <p class="eyebrow">Why we return</p>
+      <h3>The river is part of camp.</h3>
+      <p>Lost River gives us mountain camping with the river right there, room to spread out, hammocks, campfires, and enough nearby adventures without having to turn the week into a road rally.</p>
+    </article>
+    <article class="card">
+      <div class="icon">🔥</div>
+      <p class="eyebrow">Family campout</p>
+      <h3>A bigger campfire.</h3>
+      <p>This trip is being planned as a family gathering: tents, cabin, camper, shared meals, coffee, fudge, stories, and whoever ends up claiming the best chair around the fire.</p>
+    </article>
+  </div>
 
-    <section id="genealogy" class="section muted">
-      <div class="section-heading split-heading">
-        <div>
-          <p class="eyebrow">From the trail to the family tree • August 17, 2026</p>
-          <h2>Walking with the ancestors.</h2>
-        </div>
-        <p>Plymouth made the history personal. After walking places connected to our family, the next Trail Tater branch became documenting the records behind the names—not just collecting a pedigree, but proving the story one source at a time.</p>
-      </div>
+  <section class="section">
+    <p class="eyebrow">The plan so far</p>
+    <h2>Seven days in the White Mountains.</h2>
+    <div class="timeline">
+      <div class="row"><b>Wednesday, July 28</b><span>Arrival day, set up the family basecamp, get the coffee station operational, and remember where everybody packed the tent stakes.</span></div>
+      <div class="row"><b>During the week</b><span>River time, campground wandering, camp cooking, hammocks, family photos, local shops, and whatever spontaneous detours earn a Trail Tater story.</span></div>
+      <div class="row"><b>Must-do return</b><span>Clark's Bears is already on the list, along with some White Mountain exploring and plenty of time that does not require a schedule.</span></div>
+      <div class="row"><b>Tuesday, August 3</b><span>Break camp, one last look at the river, and begin discussing the trip we should probably take next.</span></div>
+    </div>
+  </section>
 
-      <div class="story-lane-grid">
-        <a href="plymouth-2026.html">
-          <span>⚓</span>
-          <div>
-            <h3>Plymouth changed the trail</h3>
-            <p>The pilgrimage led from John Howland and Elizabeth Tilley to society applications, vital records, town books, census pages, probate files and cemetery clues.</p>
-          </div>
-        </a>
-        <a href="burial-hill.html">
-          <span>🪦</span>
-          <div>
-            <h3>Proof before pedigree</h3>
-            <p>A family tree is the roadmap, not the finish line. When records disagree, the disagreement stays in the notes until better evidence settles it.</p>
-          </div>
-        </a>
-      </div>
 
-      <div class="section-heading" style="margin-top:46px;margin-bottom:18px">
-        <p class="eyebrow">The working Howland line</p>
-        <h2 style="font-size:clamp(2rem,4vw,3.4rem)">A quick family tree.</h2>
-      </div>
-      <div class="rating-scale" aria-label="Working Howland family line">
-        <div><strong>1620</strong><span>John Howland + Elizabeth Tilley</span></div>
-        <div><strong>↓</strong><span>Desire Howland + John Gorham</span></div>
-        <div><strong>↓</strong><span>Jabez Gorham + Hannah Sturgis Gray</span></div>
-        <div><strong>↓</strong><span>Joseph Gorham + Abigail Lockwood</span></div>
-        <div><strong>↓</strong><span>Lockwood Gorham + Abigail Meeker</span></div>
-        <div><strong>↓</strong><span>Lockwood Gorham Jr. + Thankful Ives</span></div>
-        <div><strong>↓</strong><span>Thankful Gorham + Daniel Barnum</span></div>
-        <div><strong>↓</strong><span>Alfred Barnum + Lydia Ann Salmons</span></div>
-        <div><strong>↓</strong><span>Mary Elizabeth Barnum + Theadric Sherwood</span></div>
-        <div><strong>↓</strong><span>Bertha Angeline Sherwood + Miles Beach Alaby</span></div>
-        <div><strong>↓</strong><span>Ward Kenneth Alaby + Anna Marie Pflomm</span></div>
-        <div><strong>↓</strong><span>Frances Louise Alaby + Richard Herbert Hall</span></div>
-        <div><strong>Today</strong><span>Living descendants — intentionally left off the public lineage for privacy.</span></div>
-      </div>
-      <p class="small-note">This is the working lineage being documented for society review. Dates, spellings and relationships should change only when the evidence supports the change.</p>
-    </section>
+  <section class="section">
+    <p class="eyebrow">The pitch</p>
+    <h2>Billie presents the return to Lost River.</h2>
+    <p>Before the family heads back to New Hampshire, Billie put together the case for another Lost River family campout. Here is her presentation.</p>
+    <div style="position:relative;width:100%;padding-top:56.25%;margin-top:22px;border-radius:18px;overflow:hidden;box-shadow:0 12px 30px #1735271f;background:#000;">
+      <iframe
+        src="https://www.youtube.com/embed/m-dBH_JrIQQ"
+        title="Billie presents the Lost River 2027 family campout"
+        style="position:absolute;inset:0;width:100%;height:100%;border:0;"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+    <p class="small" style="margin-top:12px;">If the embedded player does not load on a device, the video is also available on the Trail Tater YouTube channel.</p>
+  </section>
 
-    <section id="adventures" class="section">
-      <div class="section-heading split-heading">
-        <div><p class="eyebrow">The adventure journal</p><h2>Every campsite gets a story.</h2></div>
-        <p>Not just where we stayed, but what happened there, what we learned, who came along and what might bring us back.</p>
-      </div>
-      <div class="v4-trip-grid">
-        <article class="v4-trip-card feature-trip">
-          <img src="gettysburg-battlefield-wide.jpg" alt="Wide battlefield view in Gettysburg">
-          <div><span class="trip-tag">2025 • Pennsylvania</span><h3>Gettysburg</h3><p>The Trail Tater origin story, told in full.</p><a href="gettysburg-2025.html">Open the journal →</a></div>
-        </article>
-        <article class="v4-trip-card">
-          <img src="lost-river-stream-rain.jpg" alt="Rain falling on the rocky Lost River">
-          <div><span class="trip-tag">2021–2023 • New Hampshire</span><h3>Lost River Valley</h3><p>The first campground that brought the family back for three consecutive years.</p><a href="lost-river-valley.html">Open the campfire story →</a></div>
-        </article>
-        <article class="v4-trip-card">
-          <img src="cemetery-ch058-wide.jpg" alt="Historic cemetery at Burlingame State Park">
-          <div><span class="trip-tag">2024 • Rhode Island</span><h3>Charlestown</h3><p>The camping trip that started our cemetery-walk tradition.</p><a href="charlestown-ri.html">Open the journal →</a></div>
-        </article>
-        <article class="v4-trip-card">
-          <img src="lake-compounce-neighbors.jpg" alt="Two bulldogs from the neighboring campsite at Lake Compounce Campground">
-          <div><span class="trip-tag">2025 • Connecticut</span><h3>Lake Compounce</h3><p>Trail Tater’s first RV weekend, first map state, and first campground decal.</p><a href="lake-compounce-2025.html">Start at the beginning →</a></div>
-        </article>
-        <article class="v4-trip-card feature-trip">
-          <img src="plymouth-home-resting.jpg" alt="Trail Tater resting at home after the Plymouth family pilgrimage">
-          <div><span class="trip-tag">2026 • Massachusetts</span><h3>Plymouth</h3><p>A completed Mayflower-ancestor family pilgrimage, from Sandy Pond to Burial Hill and the Jabez Howland House.</p><a href="plymouth-2026.html">Read the complete Plymouth journal →</a><a href="sandy-pond-review.html">Read the Super Tater campground review →</a><a href="burial-hill.html">Visit the Burial Hill photo story →</a><a href="jabez-howland-house.html">Step inside the Jabez Howland House →</a><span class="status">Trip complete • Sandy Pond: Super Tater Park • Next trip TBD</span></div>
-        </article>
-      </div>
-    </section>
+  <section class="section">
+    <p class="eyebrow">Camp kitchen forecast</p>
+    <h2>There will be food. A lot of food.</h2>
+    <p>The working camp menu already includes Trail Tater Steak and Cheese Burritos, pulled pork, family favorites, campground breakfasts, and Trail Tater Butt Crack Fudge. The exact menu will grow right along with the guest list.</p>
+  </section>
 
-    <section id="ratings" class="section tater-system">
-      <div class="rating-intro">
-        <p class="eyebrow">The official Trail Tater scorecard</p>
-        <h2>No stars. Never stars.<br>Campgrounds earn taters.</h2>
-        <p>Our ratings look beyond a pretty campsite. We consider the site itself, campground care, friendliness, practical RV needs, nearby discoveries and the one question that matters most: would we gladly return?</p>
-        <a class="button secondary" href="tater-rating.html">See the complete rating system</a>
-      </div>
-      <div class="rating-scale" aria-label="Five-level Tater Rating System">
-        <div><strong>🥔🥔🥔🥔🥔</strong><span>Pack the camper—we would return tomorrow.</span></div>
-        <div><strong>🥔🥔🥔🥔</strong><span>An excellent campground worth recommending.</span></div>
-        <div><strong>🥔🥔🥔</strong><span>A solid stay with more good than bad.</span></div>
-        <div><strong>🥔🥔</strong><span>It worked, but we would think twice.</span></div>
-        <div><strong>🥔</strong><span>Keep driving and find another patch of ground.</span></div>
-      </div>
-    </section>
+  <section class="callout">
+    <p class="eyebrow">The Trail Tater way</p>
+    <h2>We have been here before. That is exactly why we are going back.</h2>
+    <p>Some trips are about finding a new pin for the map. Others are about returning to a place that already feels woven into the family story. Lost River is one of those places.</p>
+    <a class="button" href="/">Pull up a chair at TrailTater.com</a>
+  </section>
+</div>
+</main>
 
-    <section id="map" class="section map-section muted">
-      <div class="section-heading split-heading">
-        <div><p class="eyebrow">The Trail Tater map</p><h2>Every pin has a campfire behind it.</h2></div>
-        <p>Select a campground to visit the place where that chapter began. The map grows as the miles and stories do.</p>
-      </div>
-      <div class="stats" aria-label="Trail Tater travel statistics">
-        <div><strong>5</strong><span>Campgrounds</span></div>
-        <div><strong>5</strong><span>States</span></div>
-        <div><strong>2023</strong><span>Archive begins</span></div>
-        <div><strong>∞</strong><span>Detours ahead</span></div>
-      </div>
-      <div class="map-layout">
-        <div id="travel-map" role="region" aria-label="Interactive map of Trail Tater campground trips"><p class="map-fallback">Loading the Trail Tater map…</p></div>
-        <div class="trip-list" id="trip-list" aria-label="Campground list"></div>
-      </div>
-    </section>
-
-    <section class="section story-lanes">
-      <div class="section-heading"><p class="eyebrow">More roads to wander</p><h2>Trail Tater is bigger than camping.</h2></div>
-      <div class="story-lane-grid">
-        <a href="radio.html"><span>📻</span><div><h3>Campground Radio</h3><p>K1RHH, portable operating, Scouts on the air and radio from the road.</p></div></a>
-        <a href="gettysburg-2025.html#gallery"><span>📷</span><div><h3>Photo Stories</h3><p>Sunrises, camp life, historic places and family moments.</p></div></a>
-        <a href="charlestown-ri.html"><span>🪦</span><div><h3>Cemetery Discoveries</h3><p>Old stones, veterans, symbols and history found beside the campsite.</p></div></a>
-        <a href="campfire-dispatches.html"><span>🔥</span><div><h3>Campfire Dispatches</h3><p>Trip news, campground reviews and stories sent from the Trail Tater campfire.</p></div></a>
-        <a href="contact.html"><span>👋</span><div><h3>Friends Along the Way</h3><p>Scan the camper, send a note and keep the campfire conversation going.</p></div></a>
-      </div>
-    </section>
-
-    <section class="section rig v4-rig">
-      <div class="rig-copy">
-        <p class="eyebrow">The rolling basecamp</p>
-        <h2>Meet the real Trail Tater.</h2>
-        <p>A 2025 Forest River Rockwood Geo Pro G20BH built for family travel, history runs, solar camping and whatever interesting road catches our attention.</p>
-        <div class="specs">
-          <span>Geo Pro G20BH</span><span>380W solar</span><span>12V refrigerator</span>
-          <span>Honda EU2000i</span><span>2014 Ram 1500</span><span>Plenty of personality</span>
-        </div>
-      </div>
-      <img src="trail-tater-hero.jpg" alt="Trail Tater camper in its campsite">
-    </section>
-
-    <section class="section v4-crew">
-      <div class="section-heading"><p class="eyebrow">The crew</p><h2>The people—and dog—inside the story.</h2></div>
-      <div class="crew-grid">
-        <article class="crew-card"><img class="portrait photo" src="ken.jpg" alt="Ken seated inside Trail Tater"><h3>Ken</h3><p>Driver, storyteller, history hunter, cemetery caretaker and chief navigator of interesting detours.</p></article>
-        <article class="crew-card"><img class="portrait photo" src="lisa.jpg" alt="Lisa seated inside Trail Tater"><h3>Lisa</h3><p>Co-pilot, family anchor and the steady hand behind the adventures.</p></article>
-        <article class="crew-card placeholder"><div class="portrait">B</div><h3>Billie</h3><p>Scout, adventurer, sharp observer and highly qualified reviewer of Dad’s website ideas.</p></article>
-        <article class="crew-card"><img class="portrait photo" src="stewie.jpg" alt="Stewie sitting inside the camper"><h3>Stewie</h3><p>Campground inspector, squirrel-patrol supervisor and chief treat quality-control officer.</p></article>
-      </div>
-    </section>
-
-    <section id="qr" class="section qr-welcome v4-qr">
-      <div>
-        <p class="eyebrow">Seen us at a campground?</p>
-        <h2>You scanned the camper. Now pull up a chair.</h2>
-        <p>TrailTater.com was made to turn a campground hello into a friendship that can continue long after everyone pulls out of the site.</p>
-        <div class="hero-actions">
-          <a class="button primary" href="contact.html">Send Trail Tater a message</a>
-          <a class="button secondary" href="TrailTater-QR-Code.png" download>Save the QR code</a>
-        </div>
-      </div>
-      <img class="qr-image" src="TrailTater-QR-Code.png" alt="QR code linking to TrailTater.com">
-    </section>
-  </main>
-
-  <footer class="v4-footer">
-    <div class="footer-identity"><strong>🥔 Trail Tater</strong><span>Campgrounds, history, family and friends along the way.</span></div>
-    <div class="footer-contact"><a class="footer-email" href="mailto:campfire@trailtater.com">campfire@trailtater.com</a><span>© <span id="year"></span> Trail Tater</span></div>
-  </footer>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="script.js"></script>
+<footer>
+  <div class="wrap">🥔 Trail Tater · Campgrounds, history, family and friends along the way.</div>
+</footer>
 </body>
 </html>
