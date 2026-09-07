@@ -3,20 +3,19 @@
   <channel>
     <title>Trail Tater Campfire</title>
     <link>https://trailtater.com/</link>
-    <description>Trail Tater campground trips, family adventures, camp cooking, history, and stories from along the way.</description>
+    <description>Campfire dispatches, updates, adventures, history, and stories from Trail Tater.</description>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Sep 2026 22:53:21 +0000</lastBuildDate>
-    <generator>TrailTater.com</generator>
-    <ttl>60</ttl>
+    <lastBuildDate>Mon, 07 Sep 2026 13:02:00 -0400</lastBuildDate>
 
     <item>
-      <title>Back to Lost River Valley Campground in 2027</title>
-      <link>https://trailtater.com/lost-river-2027/</link>
-      <guid isPermaLink="true">https://trailtater.com/lost-river-2027/</guid>
-      <pubDate>Sun, 06 Sep 2026 18:52:00 +0000</pubDate>
+      <title>Trail Tater Campfire RSS Test — New Template Check</title>
+      <link>https://trailtater.com/</link>
+      <guid isPermaLink="false">trailtater-rss-test-2026-09-07-1302</guid>
+      <pubDate>Mon, 07 Sep 2026 13:02:00 -0400</pubDate>
       <description><![CDATA[
-        Trail Tater is planning a return to Lost River Valley Campground in North Woodstock, New Hampshire, July 28 through August 3, 2027. The new update includes the working family-campout plan, preferred sites, camp cooking, Clark's Bears, and Billie and Kalley's presentation.
+        This is a Trail Tater Campfire test update. We are checking that the new Brevo RSS email template pulls the title, date, description, image, and Read More link correctly. If this arrives looking like Trail Tater instead of the old stock template, the campfire is officially lit.
       ]]></description>
+      <enclosure url="https://trailtater.com/assets/trail-tater-trailer.png" type="image/png" />
     </item>
   </channel>
 </rss>
