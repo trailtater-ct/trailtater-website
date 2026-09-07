@@ -1,21 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
-  <channel>
-    <title>Trail Tater Campfire</title>
-    <link>https://trailtater.com/</link>
-    <description>Campfire dispatches, updates, adventures, history, and stories from Trail Tater.</description>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 07 Sep 2026 13:02:00 -0400</lastBuildDate>
-
-    <item>
-      <title>Trail Tater Campfire RSS Test — New Template Check</title>
-      <link>https://trailtater.com/</link>
-      <guid isPermaLink="false">trailtater-rss-test-2026-09-07-1302</guid>
-      <pubDate>Mon, 07 Sep 2026 13:02:00 -0400</pubDate>
-      <description><![CDATA[
-        This is a Trail Tater Campfire test update. We are checking that the new Brevo RSS email template pulls the title, date, description, image, and Read More link correctly. If this arrives looking like Trail Tater instead of the old stock template, the campfire is officially lit.
-      ]]></description>
-      <enclosure url="https://trailtater.com/assets/trail-tater-trailer.png" type="image/png" />
-    </item>
-  </channel>
+<channel>
+<title>Trail Tater Campfire</title>
+<link>https://trailtater.com/</link>
+<description>Trail Tater campground trips, family adventures, camp cooking, history, and stories from along the way.</description>
+<language>en-us</language>
+<lastBuildDate>Mon, 07 Sep 2026 20:05:10 +0000</lastBuildDate>
+<generator>TrailTater.com</generator>
+<ttl>60</ttl>
+<item>
+<title>Trail Tater is on YouTube</title>
+<link>https://trailtater.com/youtube/</link>
+<guid isPermaLink="true">https://trailtater.com/youtube/</guid>
+<pubDate>Mon, 07 Sep 2026 20:03:54 +0000</pubDate>
+<description><![CDATA[Trail Tater has a new YouTube home and a fresh look. The new channel brings campground stories, family adventures, camp cooking, history, old cemeteries, amateur radio, and the next generation of Trail Tater—including Billie and Kalley—onto video. Pull up a chair and meet us at @TrailTater.]]></description>
+</item>
+<item>
+<title>Back to Lost River Valley Campground in 2027</title>
+<link>https://trailtater.com/</link>
+<guid isPermaLink="false">trailtater-lost-river-2027-20260906</guid>
+<pubDate>Sun, 06 Sep 2026 18:52:00 +0000</pubDate>
+<description><![CDATA[Trail Tater is planning a return to Lost River Valley Campground in North Woodstock, New Hampshire, July 28 through August 3, 2027.]]></description>
+</item>
+</channel>
 </rss>
