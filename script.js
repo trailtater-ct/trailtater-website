@@ -23,7 +23,64 @@ document.addEventListener('click', (event) => {
   toggle?.setAttribute('aria-expanded', 'false');
 });
 
-document.getElementById('year').textContent = new Date().getFullYear();
+const year = document.getElementById('year');
+if (year) year.textContent = new Date().getFullYear();
+
+const socialNetworks = [
+  {name:'YouTube', icon:'▶️', url:'https://www.youtube.com/@TrailTater', note:'Shorts, trip videos and the assorted nonsense along the way.'},
+  {name:'Facebook', icon:'📘', url:'https://www.facebook.com/profile.php?id=122102952525470246', note:'Campfire updates, videos, photos and new Trail Tater stories.'},
+  {name:'Instagram', icon:'📸', url:'https://www.instagram.com/trailtater/', note:'Reels, campground moments, throwbacks and life on the road.'},
+  {name:'TikTok', icon:'🎵', url:'https://www.tiktok.com/@trailtater', note:'Quick Trail Tater moments, family chaos and whatever Stewie is doing.'}
+];
+
+if (document.body.classList.contains('home-v4') && !document.getElementById('follow')) {
+  const followSection = document.createElement('section');
+  followSection.id = 'follow';
+  followSection.className = 'section muted';
+  followSection.innerHTML = `
+    <div class="section-heading split-heading">
+      <div><p class="eyebrow">Follow Trail Tater</p><h2>Pull up a chair anywhere.</h2></div>
+      <p>The website is still home base, but the campfire is spreading. Find the videos, throwbacks, campground moments and assorted Trail Tater nonsense wherever you like to hang out.</p>
+    </div>
+    <div class="story-lane-grid social-follow-grid">
+      ${socialNetworks.map(item => `<a href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Follow Trail Tater on ${item.name}"><span>${item.icon}</span><div><h3>${item.name}</h3><p>${item.note}</p></div></a>`).join('')}
+    </div>`;
+  const rigSection = document.querySelector('.v4-rig');
+  if (rigSection) rigSection.before(followSection);
+
+  const sayHello = document.querySelector('.site-nav a[href="contact.html"]');
+  if (sayHello && !document.querySelector('.site-nav a[href="#follow"]')) {
+    const followLink = document.createElement('a');
+    followLink.href = '#follow';
+    followLink.textContent = 'Follow';
+    sayHello.before(followLink);
+    followLink.addEventListener('click', () => {
+      nav?.classList.remove('open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    });
+  }
+}
+
+const footer = document.querySelector('footer');
+if (footer && !footer.querySelector('.footer-social')) {
+  const footerSocial = document.createElement('nav');
+  footerSocial.className = 'footer-social';
+  footerSocial.setAttribute('aria-label', 'Trail Tater social media');
+  footerSocial.style.cssText = 'display:flex;flex-wrap:wrap;gap:10px 14px;align-items:center;';
+  socialNetworks.forEach(item => {
+    const link = document.createElement('a');
+    link.href = item.url;
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+    link.textContent = item.name;
+    link.style.cssText = 'font-weight:800;text-decoration:none;';
+    link.setAttribute('aria-label', `Trail Tater on ${item.name}`);
+    footerSocial.appendChild(link);
+  });
+  const footerContact = footer.querySelector('.footer-contact');
+  if (footerContact) footerContact.prepend(footerSocial);
+  else footer.appendChild(footerSocial);
+}
 
 const trips = [
   {id:'lost-river-2027', year:'2027', name:'Lost River Valley Campground — The Return', place:'North Woodstock, New Hampshire', lat:44.03, lng:-71.69, note:'A bigger family campout across Site 27, Cabin 18 and Double Tent Site 17.', url:'lost-river-2027.html'},
