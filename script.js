@@ -59,6 +59,26 @@ if (document.body.classList.contains('home-v4') && !document.getElementById('fol
       toggle?.setAttribute('aria-expanded', 'false');
     });
   }
+
+  const radioLink = document.querySelector('.site-nav a[href="radio.html"]');
+  if (radioLink && !document.querySelector('.site-nav a[href="meet-the-crew.html"]')) {
+    const crewLink = document.createElement('a');
+    crewLink.href = 'meet-the-crew.html';
+    crewLink.textContent = 'Crew';
+    radioLink.before(crewLink);
+    crewLink.addEventListener('click', () => {
+      nav?.classList.remove('open');
+      toggle?.setAttribute('aria-expanded', 'false');
+    });
+  }
+
+  const crewSection = document.querySelector('.v4-crew');
+  if (crewSection && !crewSection.querySelector('a[href="meet-the-crew.html"]')) {
+    const crewAction = document.createElement('div');
+    crewAction.className = 'hero-actions';
+    crewAction.innerHTML = '<a class="button primary" href="meet-the-crew.html">Meet the full Trail Tater crew</a>';
+    crewSection.appendChild(crewAction);
+  }
 }
 
 const footer = document.querySelector('footer');
