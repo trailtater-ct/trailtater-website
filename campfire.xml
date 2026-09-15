@@ -1,13 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
 <title>Trail Tater Campfire</title>
 <link>https://trailtater.com/</link>
+<atom:link href="https://trailtater.com/campfire.xml" rel="self" type="application/rss+xml" />
 <description>Trail Tater campground trips, family adventures, camp cooking, history, and stories from along the way.</description>
 <language>en-us</language>
-<lastBuildDate>Mon, 07 Sep 2026 20:13:06 +0000</lastBuildDate>
+<lastBuildDate>Tue, 15 Sep 2026 11:48:24 +0000</lastBuildDate>
 <generator>TrailTater.com</generator>
 <ttl>60</ttl>
+<item>
+<title>Meet the Trail Tater Crew</title>
+<link>https://trailtater.com/meet-the-crew.html</link>
+<guid isPermaLink="true">https://trailtater.com/meet-the-crew.html</guid>
+<pubDate>Tue, 15 Sep 2026 11:48:24 +0000</pubDate>
+<description><![CDATA[Meet Campfire Ken, Lisa, Billie, Stewie, the wider Adventure Crew, and our friend Abe. Trail Tater is family, camping, road trips, history, food, and the stories we bring home.]]></description>
+</item>
 <item>
 <title>Trail Tater is on YouTube</title>
 <link>https://trailtater.com/youtube.html</link>
@@ -17,8 +25,8 @@
 </item>
 <item>
 <title>Back to Lost River Valley Campground in 2027</title>
-<link>https://trailtater.com/</link>
-<guid isPermaLink="false">trailtater-lost-river-2027-20260906</guid>
+<link>https://trailtater.com/lost-river-2027.html</link>
+<guid isPermaLink="true">https://trailtater.com/lost-river-2027.html</guid>
 <pubDate>Sun, 06 Sep 2026 18:52:00 +0000</pubDate>
 <description><![CDATA[Trail Tater is planning a return to Lost River Valley Campground in North Woodstock, New Hampshire, July 28 through August 3, 2027.]]></description>
 </item>
